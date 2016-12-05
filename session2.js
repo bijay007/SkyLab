@@ -24,7 +24,7 @@ for (var i in toni){
 console.log("Object.keys(objName): " + Object.keys(toni));
 console.log("Object.getOwnPropertyNames(obj): " + Object.getOwnPropertyNames(toni));
 
-// OBJECT.CREATE() -> helps create new objects from the main object unlike object literal pattern(it's like function constructer)
+// OBJECT.CREATE() -> helps create new objects with prototype set to main object(here alumno)(similar to function constructer)
 var bijay = Object.create(alumno);
 bijay.city = "Barcelona";
 bijay.fullName = bijay.nombre;
