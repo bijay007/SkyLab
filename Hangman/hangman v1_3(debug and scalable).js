@@ -37,14 +37,3 @@ function findSameLetters(passedLetter) {
 		if (indexOf[letter])
 	}
 }
-
-/*function myWordIndexer(){
-	var letterList = myWord.split("");
-	var counter = new Array();
-	for (var i=0; i<letterList.length; i++) {
-		for (var j=1; j<letterList.length; j++) {
-			if letterList[i]==letterList[j];
-			counter[i]=letterList[j];
-		}
-	}
-}*/
