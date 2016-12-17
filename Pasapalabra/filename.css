@@ -1,0 +1,48 @@
+* {
+	margin :0;
+	padding:0;
+	box-sizing: border-box;
+	}
+
+html {
+	font-family: "Roboto","sans-serif";
+	font-size: 20px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	}
+
+body {
+	background-image: url("https://s29.postimg.org/6v2eivtc7/dark_pattern_2_wallpaper_1920x1080.jpg");
+}
+
+h1 {
+	text-align: center;
+	color : #FFFF22 ;
+	text-shadow: 2px 3px 3px #FF1122;
+	}
+
+#main_img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	}
+
+.game_buttons, .text_area{
+	display: block;
+	margin: auto;
+}
+
+#start, #submit {
+	margin-top: 1%;
+	display: inline-block;
+	margin-left: 30%;
+}
+
+#desc, #word {
+	margin-top: 1%;
+	display: inline-block;
+	margin-left: 20%;	
+}
+
+
+
