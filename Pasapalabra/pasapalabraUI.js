@@ -1,5 +1,5 @@
 "use strict"
-var userConfirm = document.getElementById("submit");
+var userConfirm = document.getElementById("submit");   // all possible modifiable DOM events
 var userInput = document.getElementById("word");
 var userDesc = document.getElementById("descrip");
 var userTrue = document.getElementById("correct");
