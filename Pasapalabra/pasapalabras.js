@@ -1,3 +1,4 @@
+"use strict";
 var allLetters = [{
 			id : 0,
 			desc : "La gente se sienta sobre él",
