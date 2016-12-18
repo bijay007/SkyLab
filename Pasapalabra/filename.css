@@ -31,16 +31,16 @@ h1 {
 	margin: auto;
 }
 
-#start, #submit {
+#start, #reset, #submit {
 	background-color: #4CAF50;
 	font-weight: 500;
 	border : block;
 	margin-top: 1%;
 	display: inline-block;
-	margin-left: 25%
+	margin-left: 15%
 }
 
-#desc, #word {
+#descrip, #word {
 	margin-top: 1%;
 	display : inline-block;
 	margin-left: 15%;
