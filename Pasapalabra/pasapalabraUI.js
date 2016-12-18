@@ -42,7 +42,7 @@ userRestart.addEventListener("click", restart);        // when user clicks 'rese
 function AtoZ() {
     var goodAnswer = 0, badAnswer = 0, nthItem = 0, totalPoints;   // initialize counter for good, bad, loop-start and total points
     userDesc.innerHTML = allLetters[0].desc;        // show description for first word to start loop
-    
+   // infiite loop below with 'while-loop' - need to apply step by step suto-confirmation logic :((((((((((( 
     while (nthItem < allLetters.length) {                     // conditional to iterate through all objects in the array
       userInput.innerHTML = "";                              // clears the input spaces in DOM after every iteration
       userDesc.innerHTML = allLetters[nthItem].desc;                 
