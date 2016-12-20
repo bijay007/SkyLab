@@ -50,7 +50,11 @@ function startGame(){
 function askQuestions() {                           // displays description of the array objects in every iteration
   if (currentIndex < allLetters.length) {
     var currentQuestion = allLetters[currentIndex];
-    userDesc.innerHTML = currentQuestion.desc;
+    if (currentQuestion.word.startsWith(currentQuestion.id)) {
+      userDesc.innerHTML = "Empieza con " + currentQuestion.id + " : " + currentQuestion.desc;
+    } else {
+      userDesc.innerHTML = "Contiene " + currentQuestion.id + " : " + currentQuestion.desc;
+    }
     userInput.value = "";
   } else {
     totalPoints = correctCounter - wrongCounter;
