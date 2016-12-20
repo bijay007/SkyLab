@@ -15,6 +15,7 @@ body {
 }
 
 h1 {
+	margin: auto;
 	text-align: center;
 	color : #FFFF22 ;
 	text-shadow: 2px 3px 3px #FF1122;
@@ -26,33 +27,80 @@ h1 {
 	max-width: 100%;
 	}
 
-.game_buttons, .text_area, .results{
+.start_game, .submit_words, .results{
+	margin-top: 1%;
+}
+
+#start {
 	display: block;
-	margin: auto;
+	height: 30px;
+	width: 20%;
+	margin: 1% auto auto auto;
+	font-weight: 600;
 }
 
-#start, #reset, #submit {
-	background-color: #4CAF50;
-	font-weight: 500;
-	border : block;
-	margin-top: 1%;
-	display: inline-block;
-	margin-left: 15%
+#start:hover {
+	border: thick;
+	border-radius: 3px;
+	background: #ffbb11;
 }
 
-#descrip, #word {
-	margin-top: 1%;
-	display : inline-block;
-	margin-left: 15%;
+.submit_words {
+	margin-left: 20%;
+}
+
+#submit, #descrip, #word {
+	display: inline;
+	position : relative;
+	margin-left: 5%;
+}
+
+#descrip {
+	color :yellow;
+}
+
+#word {
+	width :20%;
+	text-align: center;
 }
 
 input[type=text]:focus {
-    background-color: orange;
+    background-color: #ff9999;
 }
 
- #wrong, #correct {
+#submit {
+	color : red;
+	font-weight: 550;
+}
+
+#submit:hover {
+	border: thin;
+	border-radius: 2px;
+	background: #11ee11;
+}
+
+.results {
 	margin-top: 1%;
-	display : inline-block;
-	width: 50px;
-	margin-left: 25%;
+	margin-bottom: 1%;
+}
+
+#wrong {
+	display: inline;
+	color: red;
+	margin-left: 30%;
+	font-size: 20px;
+}
+
+#correct {
+	display: inline;
+	color: green;
+	margin-left: 40%;
+	font-size: 20px;
+
+}
+
+#showPoints {
+	display: inline;
+	margin-top: 1%;
+	margin-left: 35%;
 }
