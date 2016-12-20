@@ -87,4 +87,9 @@ function submitPressed() {
 function restart() {
   totalPoints = correctCounter - wrongCounter;
   userTotal.innerHTML = "No era una decision buena. Has conseguido solo " + totalPoints + " puntos.";
+  userDesc.innerHTML = "", userWrongAns.innerHTML = "", userRightAns.innerHTML = "Refresh to play again";
+  var next = confirm("Jugar de nuevo??");
+  if (next) {
+    startGame();
+  }
 }
