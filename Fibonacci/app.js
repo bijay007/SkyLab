@@ -1,18 +1,14 @@
 function fibonacci(){
 	var limit = askInput();
 	var x = 0, y = 1, next, old, arrayFibo=[x,y];
-	console.log(arrayFibo);
-	for (var i = 0; i<limit; i++) {
+	for (var i = 0; i<limit-2; i++) {
 		next = x+y;
 		x = y;
 		y = next;
 		arrayFibo.push(y);
-		console.log(arrayFibo);
 	}
-	console.log(arrayFibo);
 	var showResults = document.getElementById("resultbox");
 	showResults.value = arrayFibo;
-
 }
 
 function askInput(){
