@@ -12,13 +12,29 @@ return currentLine;
 
 // color in RGB representation
 (function getRGB(hex) {
-	var removeHash = hex.slice(1,hex.length);
-	var Red = parseInt(removeHash.slice(0,2).toString(),16);
-	var Green = parseInt(removeHash.slice(2,4),16);
-	var Blue = parseInt(removeHash.slice(4,6),16);
-	var color = {Red,Green,Blue};	// you can save it in an array too
-	return color;
-}('#acff35'));
+	var RGB;
+	switch (hex) {
+		case "#ff0000":
+			RGB = "Red";
+			break;
+		case "#00ff00":
+			RGB = "Green";
+			break;
+		case "#0000ff":
+			RGB = "Blue";
+			break;
+		default:
+			RGB = (function() {
+					var removeHash = hex.slice(1,hex.length);
+					var Red = parseInt(removeHash.slice(0,2),16);
+					var Green = parseInt(removeHash.slice(2,4),16);
+					var Blue = parseInt(removeHash.slice(4,6),16);
+					return {Red,Green,Blue};
+					}());
+			break;
+	}
+	return RGB;
+}("#fa12c5"));
 
 // maximum of three numbers
 (function compare(a,b,c) {
