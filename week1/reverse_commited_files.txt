@@ -1,0 +1,82 @@
+
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   firstfile_st3
+	new file:   readme.md
+	new file:   sublime.odt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	dotfiles/
+
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git commit -m "commit files"
+[master 5e7d525] commit files
+ 3 files changed, 149 insertions(+)
+ create mode 100644 firstfile_st3
+ create mode 100644 readme.md
+ create mode 100644 sublime.odt
+
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git rm --cached firstfile_st3 
+rm 'firstfile_st3'
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git rm --cached sublime.odt 
+rm 'sublime.odt'
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ ls -la
+total 40
+drwxrwxr-x 4 bijay007 bijay007  4096 ene 16 16:04 .
+drwxrwxr-x 4 bijay007 bijay007  4096 ene 16 15:28 ..
+drwxrwxr-x 6 bijay007 bijay007  4096 ene 16 15:59 dotfiles
+-rw-rw-r-- 1 bijay007 bijay007  1853 dic 12 21:59 firstfile_st3
+drwxrwxr-x 8 bijay007 bijay007  4096 ene 16 16:15 .git
+-rw-rw-r-- 1 bijay007 bijay007  3106 ene 16 15:59 readme.md
+-rw-rw-r-- 1 bijay007 bijay007 11181 ene 16 15:55 sublime.odt
+
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git log --stat
+commit 5e7d5256ad2bd604b274a70415e832b76c0e6d00
+Author: Bijay Timilsina <bjtimi.007@gmail.com>
+Date:   Mon Jan 16 16:11:33 2017 +0100
+
+    commit files
+
+ firstfile_st3 |  36 +++++++++++++++++++
+ readme.md     | 113 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ sublime.odt   | Bin 0 -> 11181 bytes
+ 3 files changed, 149 insertions(+)
+
+commit 9f763d6e6781100903f4f36bf306d947e711a39e
+Author: Bijay Timilsina <bjtimi.007@gmail.com>
+Date:   Mon Jan 16 15:46:06 2017 +0100
+
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    firstfile_st3
+	deleted:    sublime.odt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	dotfiles/
+	firstfile_st3
+	sublime.odt
+
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git commit -m "untrack files"
+[master 4022063] untrack files
+ 2 files changed, 36 deletions(-)
+ delete mode 100644 firstfile_st3
+ delete mode 100644 sublime.odt
+bijay007@bijayAcer-V5-552G:~/Downloads/Projects/Semana1$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	dotfiles/
+	firstfile_st3
+	sublime.odt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
