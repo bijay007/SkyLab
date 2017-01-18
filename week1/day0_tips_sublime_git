@@ -1,0 +1,53 @@
+
+SUBLIME TEXT - TIPS AND SHORTCUTS
+---------------------------------
+Tip 1: Control+click(toggle) : Press control and click at multiple positions to add stuffs dynamically at those positions
+Tip 2: Pressing Control+D selects a word (within 2 spaces) and doing it again (ctrl + d) highlights the next instances of the word.
+Ctrl + K + B		→	sidebar hide and show
+Ctrl + shift + P	→	package control
+Ctrl + P		→	view all files in current folder in a mini form
+Ctrl + Tab 		→	jump between currently opened tab
+
+
+GITHUB BASICS
+----------------
+
+git init
+git config --global user.name "username"
+git config --global user.email "username@xyz.com"
+git clone "https://git.../repositoryName.git
+
+echo "#random shit" >> README.md  --> adds text inside "" in the file
+cat README.md --> console.logs out the contents
+touch .gitignore --> creates gitignore to ignore random shit files
+gedit .gitignore --> opens the file with the text editor (or pico for console editing)
+	randome lines -> ctrl+X to save -> y for yes -> enter for exit
+
+git add all(or xyz.html readme.md .gitignore ...) ---> add all or selected files in the local git repository
+git commit -m "first commit" --> commits all changes we made earlier in files in staging area of local repo
+git remote add origin https://github.com/bijay007/**repoName**  --> add remote git repo location (shows location for pushing files)
+git push -u origin master  --> push the commits on local branch repo to remote repo (*** if it shows error try below before )
+** git pull origin master ** --> merges the remote(origin) with local(master) and then you can push (maybe its needed for first time pushing not sure)
+git status --> making sure all is nice and smooth
+git log --> to see the history of commits
+
+------------------
+/// Now suppose I made some changes on the file xyz.html //
+
+git add xyz.html --> adds the new modified version to staging area
+git commit -m "added extra edits" --> commit the changes on local repo (from staging area)
+git push -u origin master --> pushes the commited file on master(branch on local repo) to origin(remote)
+
+// better defined version here (added first day of bootcamp)
+
+git init  – (initialize a folder to act as git repository – git watches changes in the files)
+git status – (checks the changes in files)
+git add <filename> or * – (things that you have modified and want to commit)
+git commit -m “message” – (commits everything that are in staging area)
+git log – (watches all changes made)
+
+git branch <filename> -> create branch
+git checkout <branch filename> -> switching to branch (master is unaffected)
+git checkout <commitID>	-> changes made in the commit with specific ID
+git checkout HEAD -> last commit
+
