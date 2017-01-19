@@ -13,18 +13,18 @@ Define a function called ​encodeWord​ that receives a string and return the 
 }('You can put anything here and the function will do things said in the comments above TOAST !!'))
 
 /*encodeWordPlus
-
-Improve the previous function to add a random number between 0 and 1000 every 7 characters */
+Improve the previous function to add a random number between 0 and 10 every 7 characters */
 
 (function encodeWord (str) {
 	str = str.replace(/t/ig, 7).replace(/a/ig, 4).replace(/s/ig, 5).replace(/o/ig, 0)
 	function randomNum () {
-		var rNum = Math.floor(Math.random() * 1000) + 1
+		var rNum = Math.floor(Math.random() * 10)
 		return rNum
 	}
-	var newStr = ''
-	for (var pos6 = 5; pos6 < str.length; pos6 += 5) {
-		newStr = str.slice(pos6,0)+ randomNum + str.slice(pos6)
+	var newStr = str.split(""), extra = 1
+	for (var i = 6; i < str.length; i+= 6) {
+		newStr.splice(i+extra,0,randomNum());
+		extra++
 	}
-	return newStr
-}('You can put anything here and the function will do things said in the comments above. !!! TOAST !!'))
+	return newStr.join('')
+}('Every 7th position, a new number (between 1 and 10) is added to the string'))
