@@ -13,13 +13,13 @@
 
 1. **Javascript basics, primitives and objects**
 2. **Hoisting**, ***Scope and Closure***
-    ```javascript
+```javascript
     (function add2Nums (x) {
         return function sumHere (y) {
             return x+y
         }
     }(2)(8))
-    ```
+```
 
 ---
 
@@ -28,7 +28,7 @@
 1. **String and Array Method**
 2.**Regular Expression**
 3.**Object creation patterns and inheritance**
-4. * Visit to the doctor by Me -_- *
+4. * Visit to the doctor by Me -_- * :hospital:
 
 ---
 
