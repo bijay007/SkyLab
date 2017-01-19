@@ -6,6 +6,7 @@
 1. **Sublime text basics, plugins and shortcuts**
 2. **Git commands (*init -> add -> commit -> push*) and github**
 3. **History of Javascript**
+
 ---
 ### Day 2
 
