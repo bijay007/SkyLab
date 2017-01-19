@@ -28,7 +28,7 @@
 1. **String and Array Method**
 2.**Regular Expression**
 3.**Object creation patterns and inheritance**
-4. * Visit to the doctor by Me -_- *:hospital:
+4. *Visit to my doctor at afternoon* :hospital:
 
 ---
 
