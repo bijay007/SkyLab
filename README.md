@@ -34,6 +34,6 @@
 ### Day 4
 
 1. **Object prototypes and `this` object**
-2. **Exercises on functions and objects**[Link here!](https://github.com/juanmaguitar/exercises-javascript/tree/master/07-exercises-functions)
+2. **Exercises on functions and objects** [Link here!](https://github.com/juanmaguitar/exercises-javascript/tree/master/07-exercises-functions)
 
 
