@@ -1,7 +1,7 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 # Week 1
 
-### Day1
+### Day1 :smile:
 
 1. **Sublime text basics, plugins and shortcuts**
 2. **Git commands (*init -> add -> commit -> push*) and github**
@@ -28,13 +28,13 @@
 1. **String and Array Method**
 2.**Regular Expression**
 3.**Object creation patterns and inheritance**
-4. * Visit to the doctor by Me -_- * :hospital:
+4. * Visit to the doctor by Me -_- *:hospital:
 
 ---
 
 ### Day 4
 
 1. **Object prototypes and `this` object**
-2. **Exercises on functions and objects**[Link here!](https://github.com/juanmaguitar/exercises-javascript/tree/master/07-exercises-functions)
+2. **Exercises on functions and objects** : [Link here!](https://github.com/juanmaguitar/exercises-javascript/tree/master/07-exercises-functions)
 
 
