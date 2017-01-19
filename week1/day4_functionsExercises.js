@@ -66,3 +66,15 @@ function combiner (str) {
   return mainArr
 }
 combiner('doggy')
+
+/* Sort letters
+
+Write a JavaScript function that returns a passed string with letters in alphabetical order
+
+Example string : 'webmaster'
+Expected Output : 'abeemrstw'
+Assume punctuation and numbers symbols are not included in the passed string. */
+
+(function sorter (str) {
+  return Array.prototype.sort.call(str.split('')).join('') // calling Array sort method on splitted string and joining it later
+}('zaybxcwd'))
