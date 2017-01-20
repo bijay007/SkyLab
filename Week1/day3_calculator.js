@@ -78,3 +78,12 @@ function calculatorPro () {
 }
 // same as above enter -> functionName('operation',num1,num2,.....numN). for eg.
 calculatorPro('multiplicacion', 1, 5, 2, 3, 5, 3) // gives 450
+
+// USING HIGHER ORDER FUNCTION
+// eg. Sum function can be written as:
+
+(function sum () {
+  return Array.prototype.reduce.call(arguments, function (iniValue, elements) { // iniValue = 0 (we set it) and elements are elements of arguments in this case
+    return iniValue + elements
+  }, 0)
+}(2, 3, 4, 5, 6))
