@@ -54,5 +54,6 @@
     // guess what will be printed out??
 ```
 2. **TDD with Jasmine**
+>first test, then write code; makes you think about function and return values in different way
 
 
