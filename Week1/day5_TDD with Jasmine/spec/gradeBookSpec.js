@@ -1,15 +1,15 @@
-describe ('The function gradeBook ', function () { // what functions are inside
+describe ('The function gradeBook ', function () {
 
-	it ('must exist.', function () {		// expected behaviours of the sum function (behaviour 1 is checking if the function is defined)
+	it ('must exist.', function () {
 		expect (gradeBook).toBeDefined()
 	})
 
-	it ('should receive 3 parameters.', function () { // behaviour 2 (checks if typeof result is the same as returned by sum(x,y))
+	it ('should receive 3 parameters.', function () {
 		var result = gradeBook.length
 		expect (result).toEqual(3)
 	})
 
-	it ('should return a string when executed.', function () { // behaviour 2 (checks if typeof result is the same as returned by sum(x,y))
+	it ('should return a string when executed.', function () {
 		var result = gradeBook ()
 		expect (typeof result).toEqual('string')
 	})

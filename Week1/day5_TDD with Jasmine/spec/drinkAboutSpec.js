@@ -1,20 +1,19 @@
-describe ('The function peopleWithAgeDrink ', function () { // what functions are inside
+describe ('The function peopleWithAgeDrink ', function () { // function that checks multiple conditions
 
-	it ('must exist.', function () {		// expected behaviours of the sum function (behaviour 1 is checking if the function is defined)
+	it ('must exist.', function () {		// the function should have been defined
 		expect (peopleWithAgeDrink).toBeDefined()
 	})
 
-	it ('should receive only 1 parameter.', function () { // behaviour 2 (checks if typeof result is the same as returned by sum(x,y))
+	it ('should receive only 1 parameter.', function () { // checks that only a single argument is passed to the function
 		var result = peopleWithAgeDrink.length
 		expect (result).toEqual(1)
 	})
 
-	it ('should return a string when executed.', function () { // behaviour 2 (checks if typeof result is the same as returned by sum(x,y))
-		var result = peopleWithAgeDrink ()
+	it ('should return a string when executed.', function () { // checks that the returned value is a string
 		expect (typeof result).toEqual('string')
 	})
 
-	it ('should return drink teddy when peopleWithAgeDrink(13)', function () {
+	it ('should return drink teddy when peopleWithAgeDrink(13)', function () { // checks if age is X (upto 14), the result is 'drink teddy'
 		var result = peopleWithAgeDrink (13)
 		expect (result).toEqual('drink toddy')
 	})
