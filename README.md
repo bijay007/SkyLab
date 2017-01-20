@@ -41,6 +41,18 @@
 ### Day 5
 
 1. **CodePad practice with companions in class on screen**
-1. **TDD with Jasmine**
+```javascript
+    function printName () {
+        var myName = "Bijay."
+        function returnName () {
+            return "My name is " + myName
+        }
+        myName = "something else."
+        return returnName
+    }
+    printName()()
+    // guess what will be printed out??
+```
+2. **TDD with Jasmine**
 
 
