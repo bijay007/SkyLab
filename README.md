@@ -40,7 +40,7 @@
 
 ### Day 5
 
-1. **CodePad practice in class on screen**
+1. **CodePad practice with companions in class on screen**
 1. **TDD with Jasmine**
 
 
