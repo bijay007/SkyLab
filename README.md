@@ -36,4 +36,9 @@
 1. **Object prototypes and `this` object**
 2. **Exercises on functions and objects** [Link here!](https://github.com/juanmaguitar/exercises-javascript/tree/master/07-exercises-functions)
 
+### Day 5
+
+1. **CodePad practice in class on screen**
+1. **TDD with Jasmine**
+
 
