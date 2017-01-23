@@ -59,7 +59,7 @@
 
 ##Week2
 
-#Day1
+###Day1
 
 1. **More unit testing with Jasmine and playing with jsKoans**
 
