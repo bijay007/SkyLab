@@ -57,4 +57,10 @@
 
 >first test, then write code; makes you think about function and return values in different way
 
+##Week2
+
+#Day1
+
+1. **More unit testing with Jasmine and playing with jsKoans**
+
 
