@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Exercise</title>
+	</head>
+	<body>
+		<h3>A simple Form</h3>
+		<p><em>Form fundamentals</em></p>
+		<form action="https://github.com/juanmaguitar/html-layouts-exercises/tree/master/02-form-exercise" method="post">
+			<fieldset>
+				<legend>Customer Info</legend>
+				<ul>
+					<li>
+						<label for="user">Name</label>
+						<input type="text" name="user" placeholder="Enter your name" autofocus required>
+					</li>
+					<li>
+						<label for="phone">Telephone</label>
+						<!-- pattern = "[0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+						<input type="tel" name="phone" placeholder="Pattern X-XXX-XXX-XXXX" pattern="[0-9]{11}" required>
+					</li>
+					<li>				
+						<label for="email">Email Address</label>
+						<input type="Email" name="email" placeholder="Enter your email" required>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Books</legend>
+					<!-- <input type="text" size = "50"> -->
+  					<input list="books" name="books" placeholder="click here">
+  					<datalist id="books">
+    					<option value="Da vinci code">
+   					 	<option value="history of time">
+    					<option value="drizzle">
+    					<option value="100ft below">
+  					</datalist>
+  				<label for="quantity">Quantity (Maximum 5)</label><input type="number" name="quantity" min="1" max="5">
+			</fieldset>
+			<input type="submit" name="form_submit">
+		</form>
+	<p>2011 Acne United. All rights reserved</p>
+	</body>
+</html>
+
+<div>
+<hr>
+	<form action="#">
+			<label for="username">Username</label>
+			<input type="input" name="username" required placeholder="name needed">
+			<input type="submit" value="send_uname_as_variable">
+			<button>send_<strong>uname</strong>_as_variable</button> <!--you can change text inside button but not in input-type-submit-->
+			<p>Other types</p>
+			<input type="radio" name="box" value="me" checked>
+			<input type="radio" name="box" value="you">
+			<input type="checkbox" name="check" value="me">Me
+			<input type="checkbox" name="check" value="you">You
+			<p>Hidden below</p>
+			<input type="hidden" name="secret-number" value="secret_number">
+		</form>
+</div>
