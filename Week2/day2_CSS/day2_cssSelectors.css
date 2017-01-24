@@ -1,0 +1,69 @@
+#book p {			/* selects all <p> tag elements that are comes after/are inside the element with id 'book' */
+	color : red;	/* there is no limit, you can go to any depth (line 22) */
+}
+
+#book, p {
+	color : blue;	/* this however selects the element with id 'book' and all elements with tag <p> */
+}
+
+section p {	
+	color : red;
+	background-color: blue;
+}
+section > p {	/* this is applied only to the direct first child (first p) of section */
+	color: blue; 
+	font-size: 10px;
+}
+
+section ~ p {	/* brothers of section (all p's in same level) (NOT CHILD) apply that	*/
+	border: 2px;
+}
+
+#book h2 + p {	/* brother that is just after h2 (only the very next). h2 and p have same parent */
+	padding: 2px;
+}
+
+/* <a href="google.com" target_blank> Google opens in same page </a> */
+a[target] {	/* selecting by attribute 'target' */
+	background: red;
+}
+
+a[href = "google.com"] {	/* selecting by value */
+	background: blue;
+}
+
+a[href *= "twitter"] {	/* all href containing the word twitter */
+	border: 1px;
+}
+
+a[href ^= "http://"] {	/* all links starting with ... */
+	color: red;
+}
+
+a[href $= ".pdf"] {	/* links ending with extension...*/
+	background-image: url("images/pdf.ico");	/* you can assign special icons for the links */
+}
+
+a:hover {
+	font-size: 15px;
+}
+
+input:checked {
+	color: red;
+}
+
+#book: first-child, last-child {
+	color: red;
+}
+
+#divwith1child: only-child {
+	color: rgb(12,221,23);
+}
+
+p:first-of-type, a:last-of-type {	/* the first <p> type and last <a> type tag */
+	font-size: 50px;
+}
+
+ul > li:nth-child(5n) {	/* all li child items which are multiples of 5 */
+	background: red;
+}

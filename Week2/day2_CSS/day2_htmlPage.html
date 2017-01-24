@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html and css</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="about bijay">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Bijay Timilsina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day2_htmlPage.css">
+</head>
+
+<body>
+    <img src="https://github.com/agandia9/studySessions/blob/master/img/logo.jpg" onerror="this.src='https://www.davidnaylor.co.uk/wp-content/uploads/panda-404.jpg';" alt="logo" />
+    <section>
+        <h1>About</h1>
+        <article>
+            <p>It can be intimidating to ask question as an <strong>extreme minority</strong>.While open and welcoming, the developer community of today is up to <strong>91% males</strong>. If we empower more female with confidence in their technological capabilities,<em> we can begin to change this landscape</em>.</p>
+        </article>
+    </section>
+    <!-- any suggestions? -->
+    <h2>Our Locations</h2>
+    <ul>
+        <li>USA</li>
+        <ul class="innerlist">
+            <li><a href="#link">New York</a></li>
+            <li><a href="#link">Columbus</a></li>
+            <li><a href="#link">Austin</a></li>
+            <li><a href="#link">Philips</a></li>
+        </ul>
+    </ul>
+    <ul>
+        <li>World</li>
+        <ul class="innerlist">
+            <li><a href="#link">Ottawa</a></li>
+            <li><a href="#link">Sydney</a></li>
+        </ul>
+    </ul>
+    <h2>Upcoming Classes</h2>
+    <table>
+        <tr>
+            <th>Location</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>Js and jQuery</td>
+        </tr>
+        <tr>
+            <td>san Francisco</td>
+            <td>HTML and CSS</td>
+        </tr>
+    </table>
+    <h2>Sign Up!</h2>
+    <form class="signup">
+        <form>
+            <ul>
+                <li>
+                    <label class="signuplabels">Name:</label>
+                    <input type="text" name="name" class="input" required>
+                </li>
+                <li>
+                    <label class="signuplabels">Email:</label>
+                    <input type="text" name="email" class="input" required>
+                </li>
+                <li>
+                    <label class="signuplabels">Location :</label>
+                    <select name="location">
+                        <option value="0">Select location</option>
+                        <option value="1">San Francisco</option>
+                        <option value="2">other random places</option>
+                    </select>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend class="signuplabels">Gender:</legend>
+                        <label for="female" class="signuplabels">Female</label>
+                        <input type="radio" name="gender">
+                        <label for="male" class="signuplabels">Male</label>
+                        <input type="radio" name="gender">
+                    </fieldset>
+                </li>
+                <li>
+                    <label>Experience :</label>
+                    <textarea rows="2" cols="24" placeholder="enter your experience here"></textarea>
+                </li>
+                <li>
+                    <input type="button" name="signup" value="Sign Up">
+                </li>
+            </ul>
+        </form>
+        <footer>
+            <nav>
+                <a href="twitter.com">Twitter</a> |
+                <a href="facebook.com">Facebook</a> |
+                <a href="flickr.com">Flickr</a>
+            </nav>
+        </footer>
+</body>
+
+</html>

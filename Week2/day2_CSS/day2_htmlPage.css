@@ -1,0 +1,72 @@
+html {
+	margin :0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: "Roboto","sans-serif";
+	text-rendering: optimizeLegibility;
+	font-weight: 200;
+	font-size: 15px;
+	color: #000000;
+}
+
+body {
+	height: 500px;
+	width: 500px;
+	margin-left: 10%;	
+}
+
+img {
+	height: 150px;
+	width: 300px;
+}
+
+h1,h2 {
+	color: #006A16;
+}
+
+strong, em {
+	color: #FAB000;
+}
+
+table, tr, td, th {
+	border: 1px solid black;
+}
+
+td {
+	padding: 2px;
+	color: #8E1A5F;
+}
+
+.signuplabels {
+	color: #8E1A5F;
+}
+
+fieldset {
+	width: 80%;
+}
+
+body > ul li > ul {
+	list-style-type: asterisks;
+	color : red;
+}
+
+form ul {
+	list-style-type: none;
+}
+
+li {
+	margin-top: 5px;
+}
+
+li:nth-child(5) textarea {
+	display: block;
+}
+
+input[type:button] {
+	border-radius: 20px;
+}
+
+footer {
+	padding: 5px;
+	margin-bottom: 5%;
+}
