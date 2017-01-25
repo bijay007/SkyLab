@@ -63,4 +63,12 @@
 
 1. **More unit testing with Jasmine and playing with jsKoans**
 
+###Day2
+
+1. HTML and CSS Basics
+
+###Day3
+
+1. Advanced CSS (flexbox, media-queries, reponsive-design principles)
+
 
