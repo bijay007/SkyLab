@@ -15,7 +15,7 @@ There are 6 ways to make change for 15 cents:
 How many ways are there to make change for a dollar
 using these common coins? (1 dollar = 100 cents). */
 
-function combos (money) {
+function combinations (money) {
   var possibilities = []
   var coins = [25, 10, 5, 1]
   var count = 0
@@ -36,4 +36,4 @@ function combos (money) {
   }
   return [count, possibilities]
 }
-combos(100)
+combinations(100)
