@@ -1,3 +1,18 @@
+/* ************************** NOTES ******************************
+1. Margin Overlap
+	CSS margins OVERLAP with each other to give the greatest margin. for eg.
+	If top div has margin-bottom : 10px and bottom div has margin-top : 15px; ..
+	The final margin won't be 25 pixel but 15 pixel (the greatest of two - 10px is overlapped and only 5 extra is added)
+2. Removing small whitespace between inline-block elements
+	By putting the end tag and starting tag of 2 distinct elements we want to be inline-block, in the same line in html
+		for eg. </div><div> -- Here the two divs are not in 2 separate lines
+	By putting HTML comment that extends the two starting lines between the 2 above divs 
+3. Absolute vs Relative
+	They are abducted from normal flow and their places is occupied by other elements if they are moved. Enable top,bottom,left and right
+	Absolute positioning ALWAYS starts from EXTREME ENDS of browser if it's outmost element.
+	!!! HOWEVER if it's OUTER CONTAINER has position:relative, it starts at the extreme end of its outer container
+	Relative positioning starts RELATIVE to ORIGINAL POSITION it would be IF IT WASN'T MOVED. POSITION 0 0 IS ITS OWN POSITION. */
+
 #book p {			/* selects all <p> tag elements that are comes after/are inside the element with id 'book' */
 	color : red;	/* there is no limit, you can go to any depth (line 22) */
 }
@@ -10,16 +25,17 @@ section p {
 	color : red;
 	background-color: blue;
 }
-section > p {	/* this is applied only to the direct first child (first p) of section */
+
+section > p {	/* this is applied ONLY to the DIRECT first child (first p) contained within the first element (here section) */
 	color: blue; 
 	font-size: 10px;
 }
 
-section ~ p {	/* brothers of section (all p's in same level) (NOT CHILD) apply that	*/
+section ~ p {	/* brothers of section (all p's that are in the same level as section) (NOT CHILD <p>) */
 	border: 2px;
 }
 
-#book h2 + p {	/* brother that is just after h2 (only the very next). h2 and p have same parent */
+#book h2 + p {	/* brother that is just after h2 (only the very next). h2 and p have same parent thats #book here */
 	padding: 2px;
 }
 
