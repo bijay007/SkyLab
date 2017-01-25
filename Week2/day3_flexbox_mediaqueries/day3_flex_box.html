@@ -1,0 +1,16 @@
+/* FLEX BOX (situate the contents inside flex-box to following its rules PARENTS) - Only to parent, not Child
+flex direction (direction of main-axis eg row, column)
+flex wrap (wrap or not the contents)
+justify-content (flex-start, flex-end, flex-center, space-between/around)
+align-items : (in cross-axis colocation eg. flex-start(top), flex-end, flex-center)
+align-contents : where to align items eg.(space-around)
+
+TO CHANGE CHILD CHARACTERISTICS
+.someChildInBox {
+	order : -1 (at start of everthing)Default is 0. If you put -2, the -2 element will be before -1.
+				At the same way, putting 1 puts at start of end.
+}
+
+.someOtherChild {
+	align-self: flex-end/center (change ind position of child repsect to the parent)
+}
