@@ -1,0 +1,10 @@
+* {
+	border: 0.5px solid red;
+}
+.jumbotron {
+  background-image: url('../img/site_showcase_bg.jpg');
+  height: 450px;
+}
+
+.jumbotron { color: white; }
+.jumbotron h1 span { color: #1caa98; }

@@ -11,7 +11,8 @@
 	They are abducted from normal flow and their places is occupied by other elements if they are moved. Enable top,bottom,left and right
 	Absolute positioning ALWAYS starts from EXTREME ENDS of browser if it's outmost element.
 	!!! HOWEVER if it's OUTER CONTAINER has position:relative, it starts at the extreme end of its outer container
-	Relative positioning starts RELATIVE to ORIGINAL POSITION it would be IF IT WASN'T MOVED. POSITION 0 0 IS ITS OWN POSITION. */
+	Relative positioning starts RELATIVE to ORIGINAL POSITION it would be IF IT WASN'T MOVED. POSITION 0 0 IS ITS OWN POSITION. 
+4. Text-align:center; aligns text inside the box while margin: 0 auto; align boxes in center within a box */
 
 #book p {			/* selects all <p> tag elements that are comes after/are inside the element with id 'book' */
 	color : red;	/* there is no limit, you can go to any depth (line 22) */
