@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text html; charset=UTF-8">
-    
-        <title>photoapp-website</title>
-    <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="./index_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/index.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>webphoto</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
+    <body>
 
-<body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -19,30 +20,70 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="file:///home/bijay007/SkyLab/Week2/day4_bootstrap/index.html#">Gamma</a>
+                <a class="navbar-brand" href="#">Gamma</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="file:///home/bijay007/SkyLab/Week2/day4_bootstrap/index.html#">Home</a></li>
-                    <li><a href="file:///home/bijay007/SkyLab/Week2/day4_bootstrap/index.html#about">About</a></li>
-                    <li><a href="file:///home/bijay007/SkyLab/Week2/day4_bootstrap/index.html#contact">Contact</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
-    </nav>
+    </nav> -->
 
-    <div class="jumbotron">
-      <div class="container col-md-6">
-        <h1>Capture <span>Life</span></h1>
-        <p>A fun and easy way to capture and share the moments you live for</p>
-        <div class="row">
-            <img src="./index_files/icon_app_store.png">
-            <img src="./index_files/icon_google_play.png">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="col-md-7 col-sm-12">
+                    <h1>Capture <span>Life</span></h1>
+                    <p>A fun and easy way to capture the moments you live for</p>
+                    <img src="img/index/icon_app_store.png" class="img-responsive">
+                    <img src="img/index/icon_google_play.png" class="img-responsive">
+                </div>
+                <div class="col-md-5 hidden-sm">
+                    <img src="img/index/site_phone.png" class="img-responsive" id="site_phone">
+                </div>
+            </div>
         </div>
-      </div>
+
+<!--second half of index with three images in a row-->
+    <div class="section">
+    <div class="container">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="row">
+               <img src="img/index/demo1.jpg" class="img-responsive"> 
+            </div>
+            <div class="row">
+                <p class="">
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="row">
+                <img src="img/index/demo2.jpg" class="img-responsive">
+                
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="row">
+                <img src="img/index/demo3.jpg" class="img-responsive">
+  
+            </div>
+            <div class="row">
+                
+            </div>           
+        </div>
+
     </div>
 
 
-
-</body></html>
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </body>
+</html>

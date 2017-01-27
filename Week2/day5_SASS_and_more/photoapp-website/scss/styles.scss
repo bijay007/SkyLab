@@ -1,0 +1,39 @@
+$green_color: #1caa98;
+#gammatop {
+    color: $green_color;
+}
+
+.main_body {
+  .jumbotron {
+      background-image: url('../img/index/site_showcase_bg.jpg');
+      height: 450px;
+      color: white;
+      h1 span {color: $green_color;}
+      p {padding: 5px;}
+      .store img {
+          display: inline-block;
+          margin-top: 5px;
+      }
+  }
+  .container {
+      padding: initial;
+      #site_phone {height: 400px;}
+  }
+}
+
+.thumbnail h3 {
+    font-weight: bold;
+}
+
+.features {
+  .jumbotron {background-color: #0ba378;}
+  .feature-list {color: white;}
+  li {font-size: 20px;}
+}
+
+footer {
+  color: white;
+  position: relative;
+  background-color: #000000;
+  p {text-align: right;}
+}

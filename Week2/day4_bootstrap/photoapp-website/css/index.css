@@ -1,0 +1,19 @@
+.navbar-brand {
+	color: #1caa98;
+}
+
+.jumbotron {
+  background-image: url('../img/index/site_showcase_bg.jpg');
+  height: 450px;
+}
+
+.jumbotron { color: white; }
+.jumbotron h1 span { color: #1caa98; }
+.jumbotron p {padding: 5px;}
+.jumbotron img {display: inline-block;}
+
+.container div {padding: initial;}
+
+.container #site_phone {
+	height: 400px;
+}

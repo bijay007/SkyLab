@@ -1,0 +1,71 @@
+/* line 3, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+#gammatop {
+  color: #1caa98;
+}
+
+/* line 5, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.main_body > .jumbotron {
+  background-image: url("../img/index/site_showcase_bg.jpg");
+  height: 450px;
+  color: white;
+}
+
+/* line 9, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.main_body > .jumbotron h1 span {
+  color: #1caa98;
+}
+
+/* line 10, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.main_body > .jumbotron p {
+  padding: 5px;
+}
+
+/* line 11, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.main_body > .jumbotron .store img {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* line 17, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.container {
+  padding: initial;
+}
+
+/* line 19, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.container #site_phone {
+  height: 400px;
+}
+
+/* line 22, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.thumbnail h3 {
+  font-weight: bold;
+}
+
+/* line 24, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.features > .jumbotron {
+  background-color: #0ba378;
+}
+
+/* line 26, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.features > .jumbotron .feature-list {
+  color: white;
+}
+
+/* line 27, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+.features > .jumbotron li {
+  font-size: 20px;
+}
+
+/* line 30, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+footer {
+  color: white;
+  position: relative;
+  background-color: #000000;
+}
+
+/* line 34, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+footer p {
+  text-align: right;
+}
+
+/*# sourceMappingURL=../css/styles.map */
