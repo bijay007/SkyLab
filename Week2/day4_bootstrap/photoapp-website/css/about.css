@@ -1,0 +1,51 @@
+/* line 4, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+#gammatitle {
+  color: #05aa81;
+}
+
+/* line 6, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+.main-title {
+  background-color: #05aa81;
+}
+
+/* line 8, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+.main-body {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* line 14, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+.features .jumbotron {
+  background-color: #0ba378;
+  margin-bottom: 0px;
+}
+
+/* line 18, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+.features .feature-list {
+  color: white;
+}
+
+/* line 19, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+.features li {
+  font-size: 20px;
+}
+
+/* line 23, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+footer {
+  color: white;
+  position: relative;
+  background-color: #000000;
+  height: 100px;
+}
+
+/* line 27, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+footer p {
+  text-align: right;
+}
+
+/* line 29, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/about.scss */
+footer div:first-child > .row {
+  padding-top: 40px;
+}
+
+/*# sourceMappingURL=../css/about.map */

@@ -1,0 +1,32 @@
+
+$green_hue :#05aa81;
+
+#gammatitle {color: $green_hue;}
+
+.main-title {background-color: $green_hue;}
+
+.main-body {
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.features {
+  .jumbotron {
+  	background-color: #0ba378;
+  	margin-bottom: 0px;
+  }
+  .feature-list {color: white;}
+  li {font-size: 20px;}
+}
+
+
+footer {
+  color: white;
+  position: relative;
+  background-color: #000000;
+  p {text-align: right;}
+  height: 100px;
+  div:first-child > .row {
+	padding-top: 40px;
+  }
+}
