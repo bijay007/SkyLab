@@ -77,10 +77,10 @@
 
     *Copying classes and modifying styles feels good and bad at the same time*
 
-###Day5 
+###Day5 :heart-eyes:
 
 5. **SASS and Bootstrap Projects**
     
->write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!! :heart-eyes:
+>write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!!
 
 
