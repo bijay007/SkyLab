@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/portfolio.css",
+	"sources": [
+		"../scss/portfolio.scss"
+	],
+	"sourcesContent": [
+		"header {\n\tp {\n\t\tfont-size: 20px;\n\t\tfont-weight: bold;\n\t}\n\tspan {\n\t\tcolor: #0066dd;\n\t}\n}"
+	],
+	"mappings": ";AAAA,AACC,MADK,CACL,CAAC,CAAC;EACD,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,IAAK;CAClB;;;AAJF,AAKC,MALK,CAKL,IAAI,CAAC;EACJ,KAAK,EAAE,OAAQ;CACf",
+	"names": []
+}

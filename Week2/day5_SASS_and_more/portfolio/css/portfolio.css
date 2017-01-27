@@ -1,0 +1,12 @@
+/* line 2, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+header p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 6, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+header span {
+  color: #0066dd;
+}
+
+/*# sourceMappingURL=../css/portfolio.map */
