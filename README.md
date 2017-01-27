@@ -57,30 +57,43 @@
 
 >first test, then write code; makes you think about function and return values in different way
 
-##Week2
+---
 
-###Day1
+## Week2
+
+### Day1
 
 1. **More unit testing with Jasmine and playing with jsKoans**
 
-###Day2
+---
+
+### Day2
 
 2. **HTML and CSS Basics**
 
-###Day3 :sweat:
+---
+
+### Day3 :sweat:
 
 3. **Advanced CSS (flexbox, media-queries, responsive-design principles)**
 
-###Day4
+---
+
+### Day4
 
 4. **Bootstrap**
 
     *Copying classes and modifying styles feels good and bad at the same time*
 
-###Day5 :heart-eyes:
+---
+
+### Day5 :heart_eyes:
 
 5. **SASS and Bootstrap Projects**
     
 >write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!!
+
+---
+
 
 
