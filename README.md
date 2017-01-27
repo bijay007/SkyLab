@@ -65,10 +65,22 @@
 
 ###Day2
 
-1. HTML and CSS Basics
+2. **HTML and CSS Basics**
 
-###Day3
+###Day3 :sweat:
 
-1. Advanced CSS (flexbox, media-queries, reponsive-design principles)
+3. **Advanced CSS (flexbox, media-queries, responsive-design principles)**
+
+###Day4
+
+4. **Bootstrap**
+
+    *Copying classes and modifying styles feels good and bad at the same time*
+
+###Day5 
+
+5. **SASS and Bootstrap Projects**
+    
+>write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!! :heart-eyes:
 
 
