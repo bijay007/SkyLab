@@ -57,8 +57,6 @@
 
 >first test, then write code; makes you think about function and return values in different way
 
----
-
 ## Week2
 
 ### Day1
@@ -92,8 +90,5 @@
 5. **SASS and Bootstrap Projects**
     
 >write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!!
-
----
-
 
 

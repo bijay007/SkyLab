@@ -1,9 +1,60 @@
+$main_color : #0050a0;
+
+img[alt="johndoe"] {
+	margin: 0 auto;
+}
 header {
-	p {
-		font-size: 20px;
-		font-weight: bold;
+	p, h2 {
+		font-size: 25px;
+		font-weight: bolder;
+		text-align: center;
 	}
 	span {
-		color: #0066dd;
+		color: $main_color;
+	}
+}
+
+main { 
+	h3 {
+		color: $main_color;
+		font-weight: bolder;
+	}
+	// .my-info {
+	// 	img {
+	// 		display: inline;
+	// 		height: 20px;
+	// 		width: 20px;
+	// 	}
+	// }
+	.career {
+		.eduExp {
+			.row {
+				background-color: #C2C2C2;
+				margin: 2% auto;
+				.dateSchool {
+					font-size : 20px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.services {
+		li {
+			margin: 2% auto;
+			max-width: 95%;
+		}
+	}
+	.productImg img {
+		display: inline-block;
+		padding: 1%;
+		margin: 1%;
+	}
+}
+footer {
+	background-color: $main_color;
+	p {
+		color: #ffffff;
+		margin-left: 15px;
+		padding-left: 15px;
 	}
 }

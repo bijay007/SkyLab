@@ -1,12 +1,61 @@
-/* line 2, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
-header p {
+/* line 3, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+img[alt="johndoe"] {
+  margin: 0 auto;
+}
+
+/* line 7, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+header p, header h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* line 12, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+header span {
+  color: #0050a0;
+}
+
+/* line 18, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+main h3 {
+  color: #0050a0;
+  font-weight: bolder;
+}
+
+/* line 31, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+main .career .eduExp .row {
+  background-color: #C2C2C2;
+  margin: 2% auto;
+}
+
+/* line 34, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+main .career .eduExp .row .dateSchool {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 6, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
-header span {
-  color: #0066dd;
+/* line 42, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+main .services li {
+  margin: 2% auto;
+  max-width: 95%;
+}
+
+/* line 47, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+main .productImg img {
+  display: inline-block;
+  padding: 1%;
+  margin: 1%;
+}
+
+/* line 53, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+footer {
+  background-color: #0050a0;
+}
+
+/* line 55, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+footer p {
+  color: #ffffff;
+  margin-left: 15px;
+  padding-left: 15px;
 }
 
 /*# sourceMappingURL=../css/portfolio.map */
