@@ -1,69 +1,69 @@
-/* line 3, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 3, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 #gammatop {
   color: #1caa98;
 }
 
-/* line 8, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 8, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .main_body .jumbotron {
   background-image: url("../img/index/site_showcase_bg.jpg");
   height: 450px;
   color: white;
 }
 
-/* line 12, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 12, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .main_body .jumbotron h1 span {
   color: #1caa98;
 }
 
-/* line 13, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 13, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .main_body .jumbotron p {
   padding: 5px;
 }
 
-/* line 14, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 14, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .main_body .jumbotron .store img {
   display: inline-block;
   margin-top: 5px;
 }
 
-/* line 19, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 19, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .main_body .container {
   padding: initial;
 }
 
-/* line 21, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 21, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .main_body .container #site_phone {
   height: 400px;
 }
 
-/* line 25, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 25, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .thumbnail h3 {
   font-weight: bold;
 }
 
-/* line 30, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 30, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .features .jumbotron {
   background-color: #0ba378;
 }
 
-/* line 31, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 31, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .features .feature-list {
   color: white;
 }
 
-/* line 32, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 32, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 .features li {
   font-size: 20px;
 }
 
-/* line 35, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 35, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 footer {
   color: white;
-  position: relative;
-  background-color: #000000;
+  background: #000000;
+  padding: 10px 0;
 }
 
-/* line 39, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/photoapp-website/scss/styles.scss */
+/* line 38, /home/bijay007/SkyLab/Week2/day4_bootstrap/photoapp-website/scss/styles.scss */
 footer p {
   text-align: right;
 }

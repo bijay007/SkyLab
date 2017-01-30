@@ -21,12 +21,13 @@ $green_hue :#05aa81;
 
 
 footer {
+  padding: 10px 0;
   color: white;
-  position: relative;
   background-color: #000000;
   p {text-align: right;}
-  height: 100px;
-  div:first-child > .row {
-	padding-top: 40px;
+  @media (max-width: 500px) {
+    footer {
+      p {text-align: center;}
+    }
   }
 }

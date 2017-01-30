@@ -34,7 +34,12 @@ $green_color: #1caa98;
 
 footer {
   color: white;
-  position: relative;
-  background-color: #000000;
+  background: #000000;
   p {text-align: right;}
+  padding: 10px 0;
+  @media (max-width: 500px) {
+    footer {
+
+    }
+  }
 }
