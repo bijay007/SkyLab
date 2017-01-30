@@ -12,10 +12,15 @@ header {
 	span {
 		color: $main_color;
 	}
+	#line {
+		border : 1px solid black;
+		box-shadow: 0 0 1px 1px;
+		border-length: 80%;
+	}
 }
 
 main { 
-	h3 {
+	h2 {
 		color: $main_color;
 		font-weight: bolder;
 	}
@@ -54,7 +59,5 @@ footer {
 	background-color: $main_color;
 	p {
 		color: #ffffff;
-		margin-left: 15px;
-		padding-left: 15px;
 	}
 }

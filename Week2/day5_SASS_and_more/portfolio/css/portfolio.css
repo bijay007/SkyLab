@@ -15,47 +15,52 @@ header span {
   color: #0050a0;
 }
 
-/* line 18, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
-main h3 {
+/* line 15, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+header #line {
+  border: 1px solid black;
+  box-shadow: 0 0 1px 1px;
+  border-length: 80%;
+}
+
+/* line 23, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+main h2 {
   color: #0050a0;
   font-weight: bolder;
 }
 
-/* line 31, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+/* line 36, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
 main .career .eduExp .row {
   background-color: #C2C2C2;
   margin: 2% auto;
 }
 
-/* line 34, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+/* line 39, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
 main .career .eduExp .row .dateSchool {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 42, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+/* line 47, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
 main .services li {
   margin: 2% auto;
   max-width: 95%;
 }
 
-/* line 47, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+/* line 52, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
 main .productImg img {
   display: inline-block;
   padding: 1%;
   margin: 1%;
 }
 
-/* line 53, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+/* line 58, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
 footer {
   background-color: #0050a0;
 }
 
-/* line 55, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
+/* line 60, /home/bijay007/SkyLab/Week2/day5_SASS_and_more/portfolio/scss/portfolio.scss */
 footer p {
   color: #ffffff;
-  margin-left: 15px;
-  padding-left: 15px;
 }
 
 /*# sourceMappingURL=../css/portfolio.map */
