@@ -21,3 +21,5 @@ these automatically receive and return  the selection as 'this'
 => However, there are several methods that do not act on a selection and are not automatically passed arguments; 
 these methods are part of the "jQuery namespace", and are best thought of as "core jQuery methods".
 they are known as utility-type methods. their return value will vary. eg. $.each() and .each()
+
+

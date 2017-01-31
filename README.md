@@ -91,4 +91,19 @@
     
 >write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!!
 
+## Week 3 => here comes the fun part :stuck_out_tongue_winking_eye:
+
+###Day1
+
+1. **Nativs js DOM methods, DOM tree traversing, event-listeners and Intro jQuery**
+
+---
+
+2. **jQuery core and prototype object's methods, DOM traversion and event handling**
+
+---
+
+3. **HTML templating with jQuery, JSON and Ajax calls to API**
+	* This is so freaking :sparkles:**AWESOME**:sparkles: *
+
 
