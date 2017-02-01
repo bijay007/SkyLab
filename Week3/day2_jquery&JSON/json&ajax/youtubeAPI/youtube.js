@@ -10,10 +10,11 @@ $('button').on('click', function () {
     var linkToVideo = mainPath.player.default
     var viewCount = mainPath.viewCount
 
-    $('.hidden').removeClass('hidden')
     $('h1').text(title)
     $('img').attr({'src': thumbnail, 'display': 'block'}).wrap($('a').attr('href', linkToVideo))
     $('p span').text(viewCount)
+
+    $('.hidden').removeClass('hidden')
   })
   .fail(function () {
     window.alert('404 not Found')

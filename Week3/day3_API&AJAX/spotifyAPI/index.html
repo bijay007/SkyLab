@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        .hidden {display: none;}
+        .text-muted {text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">😎 Spotify Songs Finder 😎</h3>
+        </div>
+        <!--input artist name-->
+        <div class="jumbotron" id="search-artists">
+            <h3>Search for an artist name...</h3>
+            <form action="" method="POST" class="form-inline" role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Input artist name...">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+        <!--show-artists-->
+        <div class="jumbotron hidden" id="select-artist">
+            <h3>Select an artist from the list...</h3>
+            <select name="" id="list-artists"></select>
+        </div>
+        <!-- show albums-->
+        <div class="jumbotron hidden" id="select-album">
+            <h3>Select an album from the list...</h3>
+            <select name="" id="list-albums"></select>
+        </div>
+        <!-- select tracks-->
+        <div class="jumbotron hidden" id="select-track">
+            <h3>Click a track for 30s preview of the song...</h3>
+            <ul class="list-group" id="list-tracks">
+        </div>
+        <footer class="footer">
+            <p>&copy; Bijay Timilsina, 2017</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <!-- Latest compiled and minified JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="spotify.js"></script>
+</body>
+
+</html>
