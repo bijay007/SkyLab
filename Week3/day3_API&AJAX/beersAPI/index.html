@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
+    <style>
+        .hidden {display: none;}
+        .text-muted {text-align: center;}
+        .description {font-size: 10px;}
+        select, #show-info {color: #000000;}
+        .text-muted {color: yellow;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">😎 Find your BEER 😎</h3>
+        </div>
+        <!--input beer name-->
+        <div class="jumbotron" id="search-beers">
+            <h3>Search for beer name...</h3>
+            <form action="" method="POST" class="form-inline" role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Input beer name...">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+        <!--show-beers-->
+        <div class="jumbotron hidden" id="select-beer">
+            <h3>Select the beer you like...</h3>
+            <select name="" id="list-beers"></select>
+        </div>
+
+        <!-- show albums-->
+        <div class="jumbotron hidden" id="show-info">
+            <h1>Characteristics</h1>
+            <h2 class="name"></h2>
+            <p class="type"></p>
+            <img src="">
+            <p class="description"></p>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Bijay Timilsina, 2017</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <!-- Latest compiled and minified JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="beers.js"></script>
+</body>
+
+</html>

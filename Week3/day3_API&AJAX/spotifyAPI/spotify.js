@@ -1,8 +1,6 @@
-$('#search-artists form').on('submit', function (e) {
-  e.preventDefault()
-  $('#select-album').addClass('hidden')
-  $('#select-track').addClass('hidden')
-
+$('#search-artists form').on('submit', function (event) {
+  event.preventDefault()
+  $('#select-album,#select-track').addClass('hidden') // hide earlier div when not the first-time
   var urlSearch = 'https://api.spotify.com/v1/search?type=artist&query=<%ARTIST-NAME%>'
   var valueSearched = $(this).find('input').val()
   var urlFilled = urlSearch.replace('<%ARTIST-NAME%>', valueSearched)
@@ -15,8 +13,8 @@ $('#search-artists form').on('submit', function (e) {
     var optionsArtists = listArtists.map(function (elem) {
       return "<option value='" + elem.id + "'>" + elem.name + '</option>'
     })
-    var selectHTML = '<option disabled selected>Select an artist...</option>' + optionsArtists.join('')
-    $('#list-artists').html(selectHTML)
+    optionsArtists.unshift('<option disabled selected>Select an artist...</option>')
+    $('#list-artists').html(optionsArtists)
     $('#select-artist').removeClass('hidden')
   })
 })
@@ -35,7 +33,8 @@ $('#select-artist').change(function () {
     var optionsAlbums = listAlbums.map(function (elem) {
       return "<option value='" + elem.id + "'>" + elem.name + '</options>'
     })
-    $('#list-albums').html(optionsAlbums.join(''))
+    var selectHTML = '<option disabled selected>Select an artist...</option>' + optionsAlbums.join('')
+    $('#list-albums').html(selectHTML)
     $('#select-album').removeClass('hidden')
   })
 })
@@ -52,13 +51,9 @@ $('#select-album').change(function () {
   .done(function (response) {
     var listTracks = response.items
     var optionsAlbums = listTracks.map(function (elem) {
-      return "<a href='" + elem.preview_url + "'>" + elem.name + '</a>'
+      return "<li><a href='" + elem.preview_url + "'>" + elem.name + '</a></li>'
     })
-    // adding all track links to separete <li> items and copying all of them combined to the ul
-    var allLists = optionsAlbums.map(function (elem) {
-      return '<li>' + elem + '</li>'
-    })
-    $('#list-tracks').append(allLists)
+    $('#list-tracks').html(optionsAlbums.join(''))
     $('#select-track').removeClass('hidden')
   })
 })
