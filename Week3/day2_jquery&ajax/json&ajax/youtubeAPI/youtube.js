@@ -9,10 +9,11 @@ $('button').on('click', function () {
     var thumbnail = mainPath.thumbnail.default
     var linkToVideo = mainPath.player.default
     var viewCount = mainPath.viewCount
-    // var wrapperLink = $('a').attr('href', linkToVideo)
+
+    $('.hidden').removeClass('hidden')
     $('h1').text(title)
-    $('img').attr('src', thumbnail).wrap($('a').attr('href', linkToVideo))
-    $('p').html().replace('views', viewCount)
+    $('img').attr({'src': thumbnail, 'display': 'block'}).wrap($('a').attr('href', linkToVideo))
+    $('p span').text(viewCount)
   })
   .fail(function () {
     window.alert('404 not Found')
