@@ -9,6 +9,9 @@ $('#search-beers form').on('submit', function (e) {
   $.ajax({
     url: urlFilled
   })
+  .fail(function () {
+    alert('No items by the name ' + valueSearched + 'found :(')
+  })
   .done(function (response) {
     var allBeers = response
     var beerNames = allBeers.map(function (elem) {
