@@ -17,6 +17,9 @@ $('#search-artists form').on('submit', function (event) {
     $('#list-artists').html(optionsArtists)
     $('#select-artist').removeClass('hidden')
   })
+  .fail(function () {
+    alert('No artist by the name ' + valueSearched + ' was found. Try again with different name.')
+  })
 })
 
 // after selecting an artist from dropdown-menu

@@ -1,4 +1,5 @@
 $('.get-profile').on('click', function () {
+  var self = this
   $.ajax({
     url: 'https://randomuser.me/api/'
   })
@@ -46,7 +47,9 @@ $('.get-profile').on('click', function () {
     $('.phone').html('<span>' + 'Cell : ' + '<span>' + cellNo + '\n' + '<span>' + 'Phone : ' + '<span>' + phoneNo)
     $('img').attr('src', photo)
   })
-
+  .fail({
+    $(self).addClass('has-error')
+  })
   // $.ajax({   => multiple ajax calls on same callback function possible? => maybe Promises??
   //   url: 'http://flag-icon-css.lip.is/'
   // })
