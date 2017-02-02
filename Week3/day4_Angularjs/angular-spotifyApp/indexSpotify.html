@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="songFinderApp">
+<head>
+	<meta charset="UTF-8">
+	<title>spotify track finder with angular</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+</head>
+<body>
+
+<body>
+<!-- enter name of artist here and press submit-->
+    <div class="container">
+        <h1>Spotify Track Finder</h1>
+      	<div class="jumbotron" ng-controller="searchBoxController">
+		    <h3>Enter name of the artist :</h3>
+		    <form action="" method="POST" class="form-horizontal" role="form" ng-submit="userFormSubmission">
+		        <div class="form-group">
+		        	<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" ng-model="userEnteredValue">
+		        </div>
+		        <button type="submit" class="btn btn-primary">Submit</button>
+		    </form>
+    	</div>
+<!--select artist from dropdown-menu-->
+
+    </div>
+    <script src="spotifyapp.js"></script> 
+</body>
+</html>

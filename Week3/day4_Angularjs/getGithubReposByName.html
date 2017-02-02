@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myGithubApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Github Demo</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-controller="MyMainController">
+        <input type="text" ng-model="username">
+        <button ng-click="updateRepos()">Get User Repos</button>
+        <ul>
+            <li ng-repeat="repo in repos">{{ repo.name }}</li>
+        </ul>
+    </div>
+
+    <script>
+    var myGithubApp = angular.module('myGithubApp', [])
+
+    myGithubApp.controller('MyMainController', function ($scope, ApiGithubFactory) {
+        $scope.updateRepos = function () {
+            ApiGithubFactory.getUserRepos($scope.username)
+                .then(function (response) {
+                    var repos = response.data
+                    $scope.repos = repos
+                })
+        }
+
+    })
+    myGithubApp.factory('ApiGithubFactory', function ($http) {
+        function getUserRepos (username) {
+            var url = 'https://api.github.com/users/' + username + '/repos'
+            return $http.get(url)
+        }
+        return {
+            getUserRepos: getUserRepos
+        }
+    })
+    </script>
+</body>
+
+</html>

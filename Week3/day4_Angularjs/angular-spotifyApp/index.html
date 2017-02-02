@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spotifyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Angular Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎶 Spotify Track Finder 🎶</h1>
+
+        <div class="jumbotron" ng-controller="SearchController">
+            <h2>Search an artist...</h2>
+            <form action="" method="POST" class="form-inline" role="form" ng-submit="searchArtist($event)">
+                <div class="form-group">
+                    <label class="sr-only" for="">label</label>
+                    <input type="text" class="form-control" id="" placeholder="Input field" ng-model="search">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="jumbotron" ng-controller="ArtistsController" ng-show="artists.length">
+            <h2>Select an artist...</h2>
+            <form action="" method="POST" class="form-inline" role="form">
+                <div class="form-group">
+                    <select name="" id="">
+                      <option value="{{artist.id}}" ng-repeat="artist in artists">{{artist.name}}</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>app</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="main jumbotron" ng-controller="showSum">
+			<h2>Enter 2 numbers to find their sum :</h2>
+			<input type="number" ng-model="num1">
+			<input type="number" ng-model="num2">
+			<h1>{{num1+num2}}</h1>
+		</div>
+
+		<div class="namelist jumbotron" ng-controller="listNames">
+		<h3>List of all students in Skylab :</h3>
+		<ul>
+			<li ng-repeat="names in allNames">
+				<strong>{{names}}</strong>
+			</li>
+		</ul>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
