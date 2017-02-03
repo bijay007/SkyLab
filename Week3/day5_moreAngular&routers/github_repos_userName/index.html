@@ -9,6 +9,7 @@
   <style>
     small { color: #ccc; }
     small:hover { color: red; cursor: pointer; }
+    li {font-size: 15px;}
   </style>
 </head>
 <body>
@@ -19,11 +20,11 @@
       <form action="">
         <input type="text" ng-model="newName">
         <button class = "btn btn-primary" ng-click="addName($event)" type="submit">Search Repos</button>
-        <p>List of all Github repos of {{newName}} are:</p>
+        <p>List of all Github repos of _{{newName}}_ are:</p>
       </form>
       <ul>
         <li ng-repeat="repo in repos">
-          <strong>{{ repo.name }}<small ng-click="removeElement($index)" > [delete]</small></strong>
+          <strong>{{ repo.name }}<small ng-click="removeElement($index)"> [delete]</small></strong>
         </li>
       </ul>
     </div>
