@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myMovies">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Movies App</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+
+</head>
+<body>
+	<!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#/">Latest Releases</a>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#/popular">Popular</a></li>
+            <li><a href="#/upcoming">Upcoming</a></li>
+            <li><a href="#/nowPlaying">Now Playing</a></li>
+            <li><a href="#/topRated">Top Rated</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+		<main ng-view></main>
+		<footer class="footer">
+      		<div class="jumbotron">
+        		<p class="text-muted">Sign up <a href="www.google.com">here</a> for a ✨ 50% discount ✨ off your next purchase.</p>
+      		</div>
+    	</footer>
+	</div>
+    <script src="js/app.js"></script>
+    <script src="js/factory.js"></script>
+    <script src="js/latestReleases/controller.js"></script>
+    <script src="js/config.js"></script>
+</body>
+</html>
