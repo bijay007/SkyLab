@@ -1,1 +1,24 @@
-<h2>now playing</h2>
+<h1>{{ section }}</h1>
+<div class="container">
+	<div id="input-row" class="input-group col-md-6">
+		<input type="text" class="search-query form-control" placeholder="Search" ng-model="userTitle"/>
+		<span class="input-group-btn">
+			<button class="btn btn-danger" type="button" ng-click="search">
+			<span class=" glyphicon glyphicon-search">
+			</span>
+			</button>
+		</span>
+	</div>
+	<div class="row">
+		<p class="text-center" ng-model="found">{{movies.length}} results were found</p>
+	</div>
+	<ul class="list-unstyled list-inline">
+		<li ng-repeat="movie in movies | filter : {title : userTitle}">
+			<figure class="figure">
+				<img src="{{imgSrc}}{{ movie.poster_path }}" class="figure-img img-fluid" alt="{{movie.title}}">
+				<figcaption class="figure-caption"><a href="#">{{movie.title}}</a></figcaption>
+			</figure>
+			<p>From: {{ movie.release_date }}</p>
+		</li>
+	</ul>
+</div>

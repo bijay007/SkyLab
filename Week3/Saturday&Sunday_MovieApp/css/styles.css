@@ -1,0 +1,32 @@
+h1 {
+	text-align: center;
+}
+
+#input-row {
+	margin: 10px auto;
+	padding: 5px;
+}
+
+ul li {
+	padding: 5px;
+}
+
+figure {
+   background-color: #fff;
+   display: table;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}​
+
+p {
+	font-size: 15px;
+}
+

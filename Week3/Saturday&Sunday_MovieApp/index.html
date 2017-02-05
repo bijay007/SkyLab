@@ -5,6 +5,13 @@
 	<title>Angular Movies App</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .navbar {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
 
@@ -13,28 +20,29 @@
 	<!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <a class="navbar-brand" href="#/">Latest Releases</a>
-        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="#/">Latest Releases</a></li>
+            <li><a href="#/nowPlaying">Now Playing</a></li>
             <li><a href="#/popular">Popular</a></li>
             <li><a href="#/upcoming">Upcoming</a></li>
-            <li><a href="#/nowPlaying">Now Playing</a></li>
             <li><a href="#/topRated">Top Rated</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+      </div><!--/.nav-collapse -->
     </nav>
 	<div class="container">
-		<main ng-view></main>
+		<main class="jumbotron" ng-view></main>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
 		<footer class="footer">
-      		<div class="jumbotron">
-        		<p class="text-muted">Sign up <a href="www.google.com">here</a> for a ✨ 50% discount ✨ off your next purchase.</p>
-      		</div>
+      <p class="text-muted text-center">Sign up <a href="www.google.com">here</a> for a ✨ 50% discount ✨ off your next purchase.</p>
     	</footer>
+    </div>
 	</div>
     <script src="js/app.js"></script>
     <script src="js/factory.js"></script>
     <script src="js/latestReleases/controller.js"></script>
+    <script src="js/nowPlaying/controller.js"></script>
     <script src="js/config.js"></script>
 </body>
 </html>

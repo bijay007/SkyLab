@@ -1,8 +1,13 @@
-<div class="jumbotron">
-	<h2>See latest releases here:</h2>
-	<ul ng-model="movies">
-		<li>Title : <strong>{{movies.original_title}}</strong></li>
-		<li>Released status : <strong>{{movies.status}}</strong></li>
-		<li>IMDB Id : <strong>{{movies.imdb_id}}</strong></li>
-	</ul>	
+<div class="container">
+	<h2>Latest Available:</h2>
+	<div class="jumbotron" ng-model="movies">
+		<p><strong>Title</strong> : {{movies.original_title}}</p>
+		<p><strong>Released status</strong> : {{movies.status}}</p>
+		<p><strong>IMDB Id</strong> : {{movies.imdb_id}}</p>
+		<p><strong>Spoken Language</strong> : {{movies.original_languages}}</p>
+		<p><strong>Genre</strong>:<ul ng-repeat="genre in genres">
+			<li>{{genre.name}}</li>
+		</ul></p>
+		<p><strong>Description</strong> : <em>{{movies.overview}}</em></p>
+	</div>	
 </div>

@@ -6,7 +6,9 @@ angular.module('myMovies')
         controller: 'latestReleases'
       })
       .when('/nowPlaying', {
-        templateUrl: 'js/nowPlaying/template.html'
+        templateUrl: 'js/nowPlaying/template.html',
+        controller: 'nowPlaying',
+        css: 'styles.css'
       })
       .when('/popular', {
         templateUrl: 'js/popular/template.html'

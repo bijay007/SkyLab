@@ -1,12 +1,17 @@
 angular.module('myMovies')
 .factory('moviesFactory', function ($http) {
   var apiKey = '0ea733e6e9ff0120779fcfb8e7b9439d'
-  function getMovies () {
+  function getLatestMovie () {
     var url = 'https://api.themoviedb.org/3/movie/latest?language=en-US&api_key=<%KEY%>'
     var url = url.replace('<%KEY%>', apiKey)
     return $http.get(url)
   }
+  function getnowPlaying () {
+  	var url = 'https://api.themoviedb.org/3/movie/now_playing?api_key=' + apiKey + ''
+  	return $http.get(url)
+  }
   return {
-    getMovies: getMovies
+    getLatestMovie: getLatestMovie,
+  	getnowPlaying: getnowPlaying
   }
 })
