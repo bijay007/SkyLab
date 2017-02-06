@@ -91,19 +91,38 @@
     
 >write the main tag/class etc once and get all the { styles of it's descendants inside } WOW!!
 
-## Week 3 => here comes the fun part :stuck_out_tongue_winking_eye:
+## Week 3 :bangbang: here comes the fun part :bangbang:
 
-###Day1
+### Day1
 
-1. **Nativs js DOM methods, DOM tree traversing, event-listeners and Intro jQuery**
+1. **Nativs js DOM methods, DOM tree traversing, event-listeners and Intro to jQuery**
 
 ---
+
+### Day2
 
 2. **jQuery core and prototype object's methods, DOM traversion and event handling**
 
 ---
 
+### Day3
+
 3. **HTML templating with jQuery, JSON and Ajax calls to API**
-	* This is so freaking :sparkles:**AWESOME**:sparkles: *
 
+	*This is so freaking :sparkles:**AWESOME**:sparkles:*
 
+---
+
+### Day4
+
+4. **AngularJS**
+
+	*Directives, modules, services, factories* = Just :man: :gun:
+
+---
+
+### Day 5
+
+ 5. **More Angular and Single Page Applications (SPA)**
+ 
+ 	*ng-View and Routers - Cool stuff :thumbsup: Not so confused*
