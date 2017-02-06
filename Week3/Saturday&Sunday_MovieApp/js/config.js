@@ -3,15 +3,16 @@ angular.module('myMovies')
     $routeProvider
       .when('/', {
         templateUrl: 'js/latestReleases/template.html',
-        controller: 'latestReleases'
+        controller: 'LatestReleases'
       })
       .when('/nowPlaying', {
         templateUrl: 'js/nowPlaying/template.html',
-        controller: 'nowPlaying',
-        css: 'styles.css'
+        controller: 'NowPlaying',
+        css: 'styles.css' // if this css is specific to this page only
       })
       .when('/popular', {
-        templateUrl: 'js/popular/template.html'
+        templateUrl: 'js/popular/template.html',
+        controller: 'Popular'
       })
       .when('/topRated', {
         templateUrl: 'js/topRated/template.html'
