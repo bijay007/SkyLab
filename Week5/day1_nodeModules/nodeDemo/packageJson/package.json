@@ -1,0 +1,14 @@
+{
+  "name": "nodedemo",
+  "version": "1.0.0",
+  "description": "testing package",
+  "main": "nodeDemo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bijay",
+  "license": "ISC",
+  "dependencies": {
+    "node-emoji": "^1.5.1"
+  }
+}

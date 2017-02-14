@@ -1,0 +1,25 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "playing with package json and commonjs modules",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bijay007"
+  },
+  "keywords": [
+    "export",
+    "require",
+    "package",
+    "commonjs",
+    "emoji"
+  ],
+  "author": "bijay",
+  "license": "MIT",
+  "dependencies": {
+    "node-emoji": "^1.5.1"
+  }
+}
