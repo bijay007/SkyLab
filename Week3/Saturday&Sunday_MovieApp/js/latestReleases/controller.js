@@ -6,3 +6,12 @@ angular.module('myMovies')
       $scope.genres = response.data.genres
     })
   })
+
+// (function() {
+// 	angular.module('')
+// 	.controller('LatestReleases', LatestReleases){
+// 		function LatestRelease() {
+
+// 		}
+// 	}
+// }())
