@@ -46,4 +46,4 @@ thirdLetter => 'j'
 
 // Rest operator
 var numbers = [1,2,3]
-var power = (..operation)=> numbers.map(items => items*operation)
+var power = (..operation)=> numbers.map(items => items*operation) // error need some rethinking
