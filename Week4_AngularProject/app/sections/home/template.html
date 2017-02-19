@@ -1,0 +1,136 @@
+
+<section class="homeSlider">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- first page carousel-->
+      <div class="item active">
+        <div class="col-md-4 col-md-offset-2">
+          <img ng-src="{{ vm.imgNowPlaying }}" class="figure-img img-fluid first-slide" alt="first" style="width: 333px">
+        </div>
+        <div class="col-md-4" style="height: 495px">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Now Playing</h2>
+              <a ng-href="">
+                <p>{{ vm.titleNowPlaying }}</p>
+              </a>
+              <p>{{ vm.descNowPlaying }}</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">More Recent</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second page carousel-->
+      <div class="item">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <img ng-src="{{ vm.imgGetPopular }}" class="figure-img img-fluid second-slide" alt="second" style="width: 333px">
+          </div>
+          <div class="col-md-4" style="height: 495px">
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Most Popular</h2>
+                <a ng-href="">
+                  <p>{{ vm.titleGetPopular }}</p>
+                </a>
+                <p>{{ vm.descGetPopular }}</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">More Popular</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- third page carousel-->
+      <div class="item">
+        <div class="col-md-4 col-md-offset-2">
+          <img ng-src="{{ vm.imgTopRated }}" class="figure-img img-fluid" alt="third" style="width: 333px">
+        </div>
+        <div class="col-md-4" style="height: 495px">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Top Rated</h2>
+              <a ng-href="">
+                <p>{{ vm.titleTopRated }}</p>
+              </a>
+              <p>{{ vm.descTopRated }}</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">More TopRated</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of carousel item pages-->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div><!-- /.carousel -->
+</section>
+
+  <!-- random quotes section -->
+    <script type="text/javascript"> // <![CDATA]
+    $(function () {
+      $('#slider div:gt(0)').hide();
+      setInterval(function () {
+      $('#slider div:first-child').fadeOut(0)
+      .next('div').fadeIn(2000)
+      .end().appendTo('#slider');
+      }, 10000);
+      var home = ['“Hay tres maneras de hacer las cosas: la correcta, la incorrecta y la mía - Robert de Niro en Casino”', '“Mi mamá siempre me decía que la vida era como una caja de bombones. Nunca sabes lo que te va a tocar - Tom Hanks en Forrest Gump”', '“No. No lo intentes. Hazlo, o no lo hagas, pero no lo intentes - El maestro Yoda en La Guerra de las Galaxias”', '“¡Soy el rey del mundo! - La historia de Leonardo Dicaprio (Jack) y Kate Winslet (Rose) en Titanic”', '“No existen preguntas sin respuesta, solo preguntas mal formuladas en todo caso, la respuesta siempre está en Matrix”', '“Vienes a mi casa, el día de la boda de mi hija a pedirme que mate por dinero - Marlon Brando en El Padrino”']
+      $('.sentence1').text(home[0])
+      $('.sentence2').text(home[1])
+      $('.sentence3').text(home[2])
+      $('.sentence4').text(home[3])
+      $('.sentence5').text(home[4])
+      $('.sentence6').text(home[5])
+    });
+    </script>
+    <div id="slider">
+      <div>
+        <h3 class="sentence1 container text-center"></h3>
+      </div>
+      <div>
+        <h3 class="sentence2 container text-center"></h3>
+      </div>
+      <div>
+        <h3 class="sentence3 container text-center"> </h3>
+      </div>
+      <div>
+        <h3 class="sentence4 container text-center"></h3>
+      </div>
+      <div>
+        <h3 class="sentence5 container text-center"></h3>
+      </div>
+      <div>
+        <h3 class="sentence6 container text-center"></h3>
+      </div>
+    </div>
+    <!-- end random quotes section-->
+
+    <!-- showing list of all genres with thumbnails-->
+    <section class="homeCategories">
+      <div class="container" ng-controller="HomeController as homeCtrl">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="genre in homeCtrl.allGenresList">
+            <div class="hovereffectHome">
+              <img class="img-responsive" src="{{genre.poster}}" alt="">
+              <div class="overlayHome">
+                <h2>{{genre.name}}</h2>
+                <p>
+                  <a ng-href="#!/genre/{{genre.id + genre.name}}">View more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

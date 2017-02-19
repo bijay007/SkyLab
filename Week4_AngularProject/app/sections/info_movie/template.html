@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="banner-movie">
+
+    <div class="row">
+      <img class="img-responsive center-left img-thumbnail" ng-src='{{ vm.moviePrePath + vm.movie.poster_path }}' width="200px;" alt="">
+
+      <div class="col-md-6">
+        <h2>{{ vm.movie.title}}</h2>
+        <h4>{{ vm.movie.overview }}</h4>
+        <div class="list-info">
+          <ul>
+            <li>Reviews: <strong><span class="text-danger">{{ vm.movie.vote_average}}</span></strong></li>
+            <li><span>Trailer: </span><a ng-href="{{vm.movie.homepage}}">Watch Trailer</a></li>
+            <li><span>Popularity: </span>{{ vm.movie.popularity }}</li>
+            <li><span>Release: </span>{{ vm.movie.release_date }}</li>
+            <li><span>Votes: </span>{{ vm.movie.vote_count }}</li>
+            <li><span>Budget $: </span>{{ vm.movie.budget }}</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>

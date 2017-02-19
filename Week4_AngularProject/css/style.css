@@ -1,0 +1,387 @@
+/* line 1, /home/bijay007/theMovieHub/sass/_nav.sass */
+.navbar {
+  background-color: #2F2F2F;
+  border-radius: 0px;
+  height: 70px;
+  border: none;
+}
+
+/* line 6, /home/bijay007/theMovieHub/sass/_nav.sass */
+.navbar .container {
+  margin-top: 10px;
+}
+
+/* line 8, /home/bijay007/theMovieHub/sass/_nav.sass */
+.navbar .container .navbar-brand {
+  font-family: open sans;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* line 12, /home/bijay007/theMovieHub/sass/_nav.sass */
+.navbar .container .navbar-brand #spantop {
+  color: #ffff00;
+}
+
+/* line 1, /home/bijay007/theMovieHub/sass/_carousel.sass */
+.carousel {
+  height: 500px;
+  margin-bottom: 25px;
+  background-image: url("./img/banner.gif");
+}
+
+/* line 5, /home/bijay007/theMovieHub/sass/_carousel.sass */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* line 7, /home/bijay007/theMovieHub/sass/_carousel.sass */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+/* line 10, /home/bijay007/theMovieHub/sass/_carousel.sass */
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* line 16, /home/bijay007/theMovieHub/sass/_carousel.sass */
+.carousel-caption p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+/* line 2, /home/bijay007/theMovieHub/sass/_categoriesHome.sass */
+.filters {
+  margin: 15px auto;
+  max-width: 75%;
+}
+
+/* line 6, /home/bijay007/theMovieHub/sass/_categoriesHome.sass */
+.by-category {
+  margin-top: 15px;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 11, /home/bijay007/theMovieHub/sass/_categoriesHome.sass */
+.by-category label {
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* line 14, /home/bijay007/theMovieHub/sass/_categoriesHome.sass */
+.by-category label input {
+  margin-right: 5px;
+}
+
+/* line 17, /home/bijay007/theMovieHub/sass/_categoriesHome.sass */
+.movielist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 21, /home/bijay007/theMovieHub/sass/_categoriesHome.sass */
+.movielist li {
+  margin: 5px;
+}
+
+/* line 1, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  color: yellow;
+}
+
+/* line 12, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 25, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 32, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* line 38, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect:hover img {
+  filter: url('data:image/svg+xmlcharset=utf-8,<svg xmlns="https://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+/* line 43, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect h4 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 58, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 68, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h4 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 74, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #42b078;
+  margin-bottom: 50px;
+}
+
+/* line 85, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome .overlayHome {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+
+/* line 94, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 106, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 112, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+/* line 122, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 135, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome:hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 139, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome a, .hovereffectHome p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+/* line 148, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome:hover a, .hovereffectHome:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 154, /home/bijay007/theMovieHub/sass/_hoverImg.sass */
+.hovereffectHome {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+/* line 1, /home/bijay007/theMovieHub/sass/_footer.sass */
+footer {
+  background-color: #2F2F2F;
+  border-radius: 0px;
+  height: 50px;
+  color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 10, /home/bijay007/theMovieHub/sass/_footer.sass */
+p {
+  margin-top: 10px;
+}
+
+/* line 1, /home/bijay007/theMovieHub/sass/_sliderSentences.sass */
+#slider {
+  margin: 10px auto;
+  font-family: robotica;
+  padding: 15px;
+  width: 100%;
+  background-color: #2F2F2F;
+  color: white;
+  height: 100px;
+  opacity: 0.8;
+}
+
+/* line 1, /home/bijay007/theMovieHub/sass/_infoMovie.sass */
+.banner-movie {
+  margin-top: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* line 5, /home/bijay007/theMovieHub/sass/_infoMovie.sass */
+.list-info {
+  display: inline-block;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* line 1, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre {
+  background-size: 100%;
+  height: 300px;
+  background-color: #BDC4A7;
+  background-repeat: no-repeat;
+}
+
+/* line 6, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Adventure {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/adventure.png");
+}
+
+/* line 8, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Comedy {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/comedy.png");
+}
+
+/* line 10, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Thriller {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/thriller.png");
+}
+
+/* line 12, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Romance {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/romance.png");
+}
+
+/* line 14, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Horror {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/horror.png");
+}
+
+/* line 16, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Animation {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/animation.png");
+}
+
+/* line 18, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Family {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/family.png");
+}
+
+/* line 20, /home/bijay007/theMovieHub/sass/_jumbotronCategories.sass */
+div.genre.Action {
+  background-image: url("https://bijay007.github.io/theMovieHub/img/action.png");
+}
+
+/* line 10, /home/bijay007/theMovieHub/sass/style.sass */
+body {
+  background-color: #BDC4A7;
+}
+
+/*# sourceMappingURL=../css/style.map */

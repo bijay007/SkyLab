@@ -1,0 +1,20 @@
+### WEB-------------------------------------------------------------
+https://fonts.google.com/specimen/Megrim?selection.family=Megrim
+
+--------------------------------------------------------------------
+
+Embed Font
+
+To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+STANDARD @IMPORT
+
+###INSERT HTML------------------------------------------------------------------------
+<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+Specify in CSS
+-------------------------------------------------------------------------------------
+
+###NAME FONT----------------------------------------------------------------------------
+
+Use the following CSS rules to specify these families:
+font-family: 'Megrim', cursive;
+----------------------------------------------------------------------------------------

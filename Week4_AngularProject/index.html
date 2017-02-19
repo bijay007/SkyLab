@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>Movies App</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
+
+	</head>
+	<body>
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+      	<div class="container">
+            <a class="navbar-brand" href="#"><span id="spantop">the</span> Movie Hub</a>       <img src="/img/logos/logo_movieHUB.gif" width="5%" class="img-responsive" alt="logo">
+        </div>
+      </nav>
+
+	<!-- ng-view main body-->
+	<div class="container">
+		<div class="row">
+			<main>
+				<div ng-view></div>
+			</main>
+		</div>
+	</div>
+	
+	<!--static footer-->
+	<div class="container-fluid">
+		<div class="row">
+			<footer>
+			 	<p class="copy col-md-6">Copyright ® 2017, All Rights Reserved</p>
+			</footer>
+		</div>
+	</div>
+
+		<script src="app/app.module.js"></script>
+		<script src="app/app.constants.js"></script>
+    	<script src="app/factories/MovieHubFactory.js"></script>
+		<script src="app/sections/home/controller.js"></script>
+		<script src="app/sections/genres/controller.js"></script>
+    	<script src="app/sections/info_movie/controller.js"></script>
+		<script src="app/app.routes.js"></script>
+
+	</body>
+
+</html>

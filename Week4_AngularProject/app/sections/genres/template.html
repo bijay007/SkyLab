@@ -1,0 +1,50 @@
+<!-- all movies of the genre poster images -->
+<img class="img-responsive" ng-src="https://bijay007.github.io/theMovieHub//img/{{ vm.genreName | lowercase }}.png" alt="">
+
+<!-- search and filter movies of the genre -->
+<div class="container">
+  <div class="row filters">
+
+    <input type="text" class="form-control input-lg" ng-model="query" placeholder="Filter movies by typing a name...">
+
+    <ul class="list-inline by-category">
+      <li>
+        <strong>Order by:</strong>
+      </li>
+      <li>
+        <label>
+            <input value="title" type="radio" ng-model="vm.order">
+            <span>Title</span>
+        </label>
+      </li>
+      <li>
+        <label>
+            <input value="-vote_average" type="radio" ng-model="vm.order">
+            <span>Rating</span>
+        </label>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- print movies on html & add hover effects on movies and url link for their description -->
+<div class="container">
+  <div class="row">
+    <ul class="list-inline movielist">
+      <li ng-repeat="movie in vm.movies | filter: { title :  query } | orderBy : vm.order">
+          <a ng-href="#!/info_movie/{{movie.id + movie.title}}">
+            <div class="hovereffect">
+                <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
+                <div class="overlay">
+                  <h4>{{movie.title}}</h4>
+                  <ul class="list-unstyled">
+                    <li><i class="glyphicon glyphicon-heart-empty"></i> {{movie.vote_average}}</li>
+                  </ul>
+                </div>
+            </div>
+          </a>
+      </li>
+    </ul>
+  </div>
+</div>

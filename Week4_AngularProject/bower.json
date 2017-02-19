@@ -1,0 +1,32 @@
+{
+  "name": "movies",
+  "homepage": "https://github.com/EzequielGomezCucchiararo/groupApp",
+  "authors": [
+    "Ezequiel Gómez Cucchiararo",
+    "Bijay Timilsina",
+    "Carles Far"
+  ],
+  "description": "\"First Team Project using front-end knowledges\"",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "movies",
+    "sass",
+    "front-end"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "angular-filter": "^0.5.14"
+  }
+}
