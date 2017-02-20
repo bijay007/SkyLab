@@ -1,0 +1,17 @@
+{
+  "name": "htmlServe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "PORT=3001 node main.js",
+    "watch": "PORT=3001 nodemon main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
