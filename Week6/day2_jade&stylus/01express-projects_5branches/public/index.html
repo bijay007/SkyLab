@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>My Static Page</h1>
+  <ul></ul>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script>
+
+    const url = 'posts'
+    $.ajax({ url })
+      .done( posts => posts.forEach( post => $("ul").append(`
+        <li>
+          <h3>${post.title}</h3>
+          <p>${post.body}</p>
+        </li>
+      `)  ) )
+
+
+  </script>
+</body>
+</html>

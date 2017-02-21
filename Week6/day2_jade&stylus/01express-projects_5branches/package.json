@@ -1,0 +1,20 @@
+{
+  "name": "demo-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "PORT=3001 node main.js",
+    "watch": "PORT=3001 nodemon main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "pug": "^2.0.0-beta11"
+  }
+}
