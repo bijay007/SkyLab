@@ -1,0 +1,18 @@
+{
+  "name": "tutsplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install && bower install",
+    "start": "app.js",
+    "watch": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
+  }
+}

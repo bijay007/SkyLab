@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title blog with Express + Pug
+  body
+    h1 My awesome Blog
+    h2= title
+    #container.col
+      ul
+        each post in posts
+          li
+            h3= post.title
+            p= post.body
+	p:a href="/" Go to Home

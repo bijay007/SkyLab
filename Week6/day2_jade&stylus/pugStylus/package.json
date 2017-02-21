@@ -1,0 +1,24 @@
+{
+  "name": "simplewebsite",
+  "version": "1.0.0",
+  "description": "simple website with express, pug and stylus",
+  "main": "main.js",
+  "scripts": {
+    "prestart": "npm install && bower install",
+    "start": "node main.js",
+    "watch": "nodemon main.js"
+  },
+  "keywords": [
+    "express",
+    "pug",
+    "stylus"
+  ],
+  "author": "bijay",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1",
+    "nib": "^1.1.2",
+    "pug": "^2.0.0-beta11",
+    "stylus": "^0.54.5"
+  }
+}

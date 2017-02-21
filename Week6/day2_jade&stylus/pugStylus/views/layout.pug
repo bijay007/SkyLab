@@ -1,0 +1,17 @@
+doctype
+html
+	head
+		title #{title} - Created with Express & Pug
+		link(rel="stylesheet", href="/stylesheets/style.css")
+	body
+		header
+			h1 My Awesome Site
+
+		.container
+			.main-content
+				block content
+			.sidebar
+				block sidebar
+
+		footer
+			p Made with love @Express, Pug & Stylus

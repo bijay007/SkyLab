@@ -1,0 +1,17 @@
+{
+  "name": "tutsplus",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "bijay timilsina <bjtimi.007@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bijay007/SkyLab",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
