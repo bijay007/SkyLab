@@ -1,4 +1,7 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+# :trident: FR:large_blue_circle:NT END :trident:
+
 ## Week 1
 
 ### Day1 :smiley:
@@ -129,13 +132,13 @@
 
 ## Week5 - FrontEnd Group Project
 
-### Day1 - Day5
+### Day1 - Day5 : theMovieHub :movie_camera:
 
-	* Repo : https://github.com/bijay007/theMovieHub
-	* Deployed Page : https://bijay007.github.io/theMovieHub/#!/home
+* Repository Link : [GitHub](https://github.com/bijay007/theMovieHub)
+* Deployed WebPage : [gh-Pages](https://bijay007.github.io/theMovieHub/#!/home)
 
 
-# BACK END
+# :zap:B:a:CK:heavy_minus_sign:END:zap:
 
 
 ## Week6 - NodeJS
