@@ -126,3 +126,44 @@
  5. **More Angular and Single Page Applications (SPA)**
  
  	*ng-View and Routers - Cool stuff :thumbsup: Not so confused*
+
+## Week5 - FrontEnd Group Project
+
+### Day1 - Day5
+
+	* Repo : https://github.com/bijay007/theMovieHub
+	* Deployed Page : https://bijay007.github.io/theMovieHub/#!/home
+
+
+# BACK END
+
+
+## Week6 - NodeJS
+
+### Day1
+
+1. **Node, npm & CommonJS Modules**
+
+---
+
+### Day2
+
+1. **Node events and streams**
+
+---
+
+### Day3
+
+1. **Nodeschool Katas**
+
+---
+
+### Day4
+
+1. **ES6**
+
+---
+
+### Day5
+
+1. **Promises and ES6 modules**
