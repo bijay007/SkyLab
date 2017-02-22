@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/bijay007/SkyLab",
+  "authors": [
+    "bijay timilsina <bjtimi.007@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

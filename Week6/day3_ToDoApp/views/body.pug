@@ -1,0 +1,7 @@
+extends layout
+block content
+	.col-sm-6
+		form(method='get' action='/todo')
+			.results= {allitems}
+			input(type='text', name='todo')
+			button(type='submit') Add
