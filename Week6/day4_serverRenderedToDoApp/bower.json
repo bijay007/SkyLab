@@ -1,0 +1,20 @@
+{
+  "name": "TodoListInGroup",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Bijay Timilsina <bjtimi.007@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

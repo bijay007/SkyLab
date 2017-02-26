@@ -1,8 +1,20 @@
 doctype
 html
 	title ToDo App
-	link(rel='stylesheet', href='/public/bower_components/bootstrap/dist/css/bootstrap.min.css')
+	link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
 	body
 		h2= heading
 		.container
-			block content
+			.col-sm-6
+
+				block input
+
+				.alltodolist
+					ul
+						for todo in todoList
+							li
+								h5= todoList.desc
+								p= todoList.date
+									span= todoList.state
+								a(href='/delete/' + todo.id) Delete
+								a(href='/update/' + todo.id) Completed

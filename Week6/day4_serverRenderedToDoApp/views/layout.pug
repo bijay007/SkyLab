@@ -1,0 +1,25 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://bootswatch.com/darkly/bootstrap.min.css')
+  body
+    .container
+      nav.navbar.navbar-inverse
+        .container-fluid
+          #bs-example-navbar-collapse-9.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/') Tasks List
+              li
+                a(href='/completed') Tasks Completed
+      h3= title
+      p
+        |Welcome to my Todo app by
+        a(href='https://github.com/bijay007')  @me 
+        |Enjoy it!
+        
+      block content
+
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')

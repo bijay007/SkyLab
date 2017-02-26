@@ -1,0 +1,22 @@
+extends layout
+block content
+  form.form-inline(action='/add', method='POST', role='form')
+    a(href="/completedAll")
+      button.btn.btn-default(type='button', style="background-color: #fbcb39") All done    
+    .form-group
+      input.form-control(type='text', name='bodyTask', placeholder='Add a new task')
+    button.btn.btn-default(type='submit', style="background-color: #447fe7") Submit
+
+  ul.list-group
+    each task in unfinishedTasks
+      li(id= task.id, class="list-group-item" style="display: inline-block; margin-right: 5px")
+        span= ++counter + '.\t' +task.body
+        div.pull-right(style="display: inline")
+          a(href="/completed/" + task.id)
+            span.glyphicon.glyphicon-ok(style="color: #fbcb39; width: 40px; text-align: center")
+          a(href="/delete/" + task.id)
+            span.glyphicon.glyphicon-remove(style="color: red")
+        p(style="color: #92928f")= task.creationDate
+  if !unfinishedTasks.length
+    h3 No tasks
+           

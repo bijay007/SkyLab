@@ -1,7 +1,6 @@
-extends layout
-block content
-	.col-sm-6
-		form(method='get' action='/todo')
-			.results= {allitems}
-			input(type='text', name='todo')
-			button(type='submit') Add
+extends layout.pug
+
+block input
+	form(method='post' action='/')
+		input(type='text', name='myTodo')
+		button(type='submit') Add
