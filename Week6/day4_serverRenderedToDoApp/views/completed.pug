@@ -5,7 +5,7 @@ block content
       li(id= task.id, class="list-group-item")
         span(style="text-decoration: line-through")= ++counter + '.\t' +task.body
         div.pull-right(style="display: inline")
-          a(href="/completed/delete/" + task.id)
+          a(href="/delete/" + task.id)
             span.glyphicon.glyphicon-remove(style="color: red")
         p(style="color: #92928f")= task.completionDate
   if !completedTasks.length

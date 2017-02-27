@@ -5,8 +5,8 @@ const writeFile = require('../js/writeFile.js')
 let tasks = require('../db/tasks.json')
 
 router.deleteTask = function (req, res) {
-  let id = req.params.id
-  tasks = tasks.filter(elem => elem.id !== id)
+  let urlID = req.params.id
+  tasks = tasks.filter(elem => elem.id !== urlID)
   writeFile(tasks)
   res.redirect('/')
 }

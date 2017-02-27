@@ -6,9 +6,9 @@ const writeFile = require('../js/writeFile.js')
 let tasks = require('../db/tasks.json')
 
 router.completeTask = function (req, res) {
-  let id = req.params.id
+  let urlID = req.params.id
   tasks.map(task => {
-    if (task.id === id) task.completionDate = 'Completed on ' + newDateFormat()
+    if (task.id === urlID) task.completionDate = 'Completed on ' + newDateFormat()
   })
   writeFile(tasks)
   res.redirect('/')
@@ -16,7 +16,7 @@ router.completeTask = function (req, res) {
 
 router.completeAll = function (req, res) { // mark all tasks as completed
   tasks.map(task => {
-    task.completionDate = ' Forced completed on ' + new Date()
+    task.completionDate = ' Force completed on ' + newDateFormat()
   })
   writeFile(tasks) // writing the tasks to JSON file
   res.redirect('/')

@@ -1,4 +1,4 @@
-const fileName = './public/db/tasks.json'
+const fileName = '../db/tasks.json'
 const fs = require('fs')
 
 module.exports = function (tasksToWrite) {
