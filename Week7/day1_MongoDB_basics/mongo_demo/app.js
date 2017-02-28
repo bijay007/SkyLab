@@ -31,3 +31,5 @@ MongoClient.connect(url, (err, db) => { // connecting to db returns object db wi
 
 .find({'borough': 'Manhattan'},{name:1, borough:1, _id:0}) // We want to show only name & borough.id is always shown so we have to manually make it not show
 // if you want to show all but name, you can simply do {name:0} and bam!!
+
+// if you acess sub-property, you always insert it within "double-quotes"
