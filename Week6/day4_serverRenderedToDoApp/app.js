@@ -1,19 +1,18 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-
-const mainRoute = require('./routes/route-main.js')
-const completedRoute = require('./routes/route-page2-allCompleted.js')
-
-app.set('view engine', 'pug')
+const todoPage = require('./routes/page1_todo')
+// const completedPage = require('./routes/page2_completed')
 
 // Setting Middlewares
+app.set('view engine', 'pug')
+
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-// Specifying what modules to each for what route
-app.use('/', mainRoute) // USE MIDDLEWARE??
-app.use('/completed', completedRoute)
+// Specifying where to search for index.js file when in specific page url
+app.use('/', todoPage)
+// app.use('/completed', completedPage)
 
 app.listen(3000, () => console.log('Listening on PORT 3000...'))
