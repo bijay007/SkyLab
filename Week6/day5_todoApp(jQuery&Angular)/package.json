@@ -1,0 +1,14 @@
+{
+  "name": "express-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install && bower install",
+    "dev": "nodemon server",
+    "start": "node server"
+  },
+  "devDependencies": {
+    "json-server": "^0.9.5"
+  }
+}

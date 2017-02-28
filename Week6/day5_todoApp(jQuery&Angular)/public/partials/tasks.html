@@ -1,0 +1,18 @@
+<form ng-submit="addTask($event)" action="" method="POST" class="form-inline" role="form">
+    <div class="input-group">
+        <input ng-model="title" type="text" class="form-control" placeholder="Type your new task description...">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-default" type="button">Add Task</button>
+        </span>
+    </div>
+</form>
+<ul class="todo">
+    <li ng-repeat="task in tasks | filter: { done: false }">
+        <h4>
+            <input id="task-{{ task.id }}" type="checkbox" ng-click="markAsDone($event, task)">
+            <label for="task-{{ task.id }}">{{ task.title }}</label>
+        </h4>
+        <em class="created-at">(Created <time>{{ task.createdAt | amDateFormat: 'DD/MM/YYYY, h:mm a' }}</time>)</em>
+        <a ng-click="removeTask($event, task.id)" href="">[ delete ]</a>
+    </li>
+</ul>

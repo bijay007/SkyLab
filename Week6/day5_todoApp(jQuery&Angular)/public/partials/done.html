@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat="task in tasks | filter: { done: true }">
+      <h4>{{ task.title }}</h4>
+      <a ng-click="removeTask($event, task.id)" href="">[ delete ]</a>
+  </li>
+</ul>
