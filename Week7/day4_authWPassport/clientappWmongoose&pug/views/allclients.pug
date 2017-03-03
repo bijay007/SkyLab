@@ -1,0 +1,7 @@
+extends layout
+block content
+	h2 List of all client info you requested :
+	ul.list-group
+		each client in clients
+			li(class='list-group-item')
+				h4 Mr #{client.name} of age #{client.age} has a contract status of ''#{client.contractStatus}'' and his last access on the system was on #{client.lastAccess} 

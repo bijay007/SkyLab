@@ -1,0 +1,20 @@
+{
+  "name": "clientDB",
+  "description": "add, update, delete and list client data with express and mongoose",
+  "main": "index.js",
+  "authors": [
+    "bijay"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bijay007/SkyLab",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
